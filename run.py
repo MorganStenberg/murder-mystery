@@ -12,8 +12,19 @@ def introduction():
     print("Your wit, charm, and keen detective skills will be your greatest allies. Now, it's time to take your first step into the labyrinth of clues and eccentricities that is Whodunit Manor.\n")
     print("Choose your path wisely, for the fate of this investigation rests squarely on your shoulders.\n")
 
+
+def get_username():
+    """
+    Gets username from user, checks if the characters used are valid
+    """
+    print("Please select your detective name..")
+    username = input("Enter your username here: \n")
+    print(f"Welcome detective {username}")
+
+
 def main():
     introduction()
+    get_username()
 
 
 main()
