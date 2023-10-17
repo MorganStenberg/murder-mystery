@@ -2,7 +2,7 @@
 
 def introduction():
     """
-    Introduces the game to the user and asks for username
+    Introduces the game to the user
     """
 
     print("Welcome to Whodunit Manor!\n")
@@ -31,7 +31,6 @@ def validate_username(username):
     valid = True
 
     try:
-        
         if len(username) == 0:
             raise ValueError(
                 "You need to enter a name")
@@ -46,7 +45,6 @@ def validate_username(username):
         print(f"Invalid data: {e}, please try again")
         valid = False
        
-    
     if valid:
          print(f"Welcome detective {username}")
 
