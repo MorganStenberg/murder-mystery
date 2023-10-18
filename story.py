@@ -20,4 +20,10 @@ Choose your path wisely, for the fate of this investigation rests squarely on yo
         """
     )
 
+def story_branch_a1():
+    print("Testing branch a1")
+
+def story_branch_a2():
+    print("testing branch a2")
+
 

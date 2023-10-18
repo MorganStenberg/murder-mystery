@@ -62,14 +62,42 @@ def validate_username(username):
 
    
 def start_game():
+    """
+    Asks the user to start the game via pressing Y
+    prints message if the user does not press Y. 
+    """
+
     while True:
         print("Press Y to start game")
         start_game = input()
         if start_game == "y":
             story.story_welcome()
+            first_choice()
             break
         else:
             print("Wrong choice, do you not dare to take on this challenge?")
+
+def first_choice():
+    """
+    Asking the user for the first choice which takes them down different branches of the story
+    """
+
+    print("""
+    1. Enter through the front doors of the manor.
+    2. Circumvent the manor and sneak in through a side entrance.
+
+    """)
+    while True:
+        first_choice = input()
+        if first_choice == "1":
+            story.story_branch_a1()
+            break
+        elif first_choice == "2":
+            story.story_branch_a2()
+            break
+        else:
+            print("Invalid choice, please enter 1 or 2")
+
 
 def main():
     introduction()
