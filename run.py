@@ -1,8 +1,22 @@
 
 import story
+import os
+import platform
 
 # Define global variable for username
 username = None
+
+def clear_screen():
+    """
+    When called clears the screen for the user, to enhance user
+    experience. 
+    """
+    if platform.system() == 'Windows':
+        os.system('cls')
+    else:
+        os.system('clear')
+    
+  
 
 def introduction():
     """
@@ -72,6 +86,7 @@ def start_game():
         print("Press Y to start game")
         start_game = input()
         if start_game == "y":
+            clear_screen()
             story.story_welcome()
             first_choice()
             break
@@ -95,10 +110,10 @@ def first_choice():
             print("Invalid choice, please enter 1 or 2")
 
 def enter_front_door():
-    enter_front_door = input()
-    if enter_front_door == "1":
+    enter_front = input()
+    if enter_front == "1":
         story.branch_a1()
-    elif enter_front_door == "2":
+    elif enter_front == "2":
         story.branch_a2()
     else:
         print("Invalid choice, please enter 1 or 2")
