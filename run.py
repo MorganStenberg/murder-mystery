@@ -1,18 +1,26 @@
 
+import story
+
+# Define global variable for username
+username = None
 
 def introduction():
     """
     Introduces the game to the user
     """
 
-    print("Welcome to Whodunit Manor!\n")
-    print("You find yourself standing in front of the grand gates of Whodunit Manor, a sprawling estate shrouded in mystery.")
-    print("As Detective Extraordinaire, you've been called upon to solve the most perplexing case of the century - a murder most foul!")
-    print("Inside, you'll encounter a cast of eccentric characters, each with their own secrets and motives. The atmosphere is thick with tension, but fear not!")
-    print("Your wit, charm, and keen detective skills will be your greatest allies. Now, it's time to take your first step into the labyrinth of clues and eccentricities that is Whodunit Manor.")
-    print("Choose your path wisely, for the fate of this investigation rests squarely on your shoulders.\n")
+    print(
+        """
+        Welcome, Detective Extraordinaire, to the grandest caper of them all - 'Murder Mystery'! 
+        Prepare to embark on a whirlwind adventure filled with more twists and turns than a contortionist on a rollercoaster.
+        In this puzzling escapade, you'll don the hat of a sharp-eyed investigator determined to untangle a web of secrets, lies, 
+        and intriguing characters. With the goal of finding the murderer and uncovering the truth! 
+        
+        But do remember that sometimes the path to the truth is not as straightforward as you might think.. 
 
-username = None
+        Do you think you have what it takes to uncover the secrets of Whodunit Manor? 
+
+        """)
 
 def get_username():
     """
@@ -52,7 +60,7 @@ def validate_username(username):
         get_username()
 
    
-
+def start_game()
 
 def main():
     introduction()
@@ -60,3 +68,5 @@ def main():
 
 
 main()
+
+
