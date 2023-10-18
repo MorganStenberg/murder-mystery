@@ -5,6 +5,22 @@ which will be called depending on the choices by the user
 
 """
 
+def introduction_text():
+    print(
+        """
+Welcome, Detective Extraordinaire, to the grandest caper of them all - 'Murder Mystery'! 
+
+Prepare to embark on a whirlwind adventure filled with more twists and turns than a contortionist on a rollercoaster.
+
+In this puzzling escapade, you'll don the hat of a sharp-eyed investigator determined to untangle a web of secrets, lies, 
+and intriguing characters. With the goal of finding the murderer and uncovering the truth! 
+        
+But do remember that sometimes the path to the truth is not as straightforward as you might think.. 
+
+Do you think you have what it takes to uncover the secrets of Whodunit Manor? 
+        """
+    )
+
 def story_welcome():
     print(
         """
