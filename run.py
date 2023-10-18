@@ -13,6 +13,7 @@ def introduction():
         """
 Welcome, Detective Extraordinaire, to the grandest caper of them all - 'Murder Mystery'! 
 Prepare to embark on a whirlwind adventure filled with more twists and turns than a contortionist on a rollercoaster.
+
 In this puzzling escapade, you'll don the hat of a sharp-eyed investigator determined to untangle a web of secrets, lies, 
 and intriguing characters. With the goal of finding the murderer and uncovering the truth! 
         
@@ -54,12 +55,12 @@ def validate_username(username):
         valid = False
        
     if valid:
-         print(f"Welcome detective {username}")
-         start_game()
-
+        print(f"Welcome detective {username}")
+        start_game()
+         
     if valid is False:
         get_username()
-
+    
    
 def start_game():
     """
@@ -81,22 +82,27 @@ def first_choice():
     """
     Asking the user for the first choice which takes them down different branches of the story
     """
-
-    print("""
-    1. Enter through the front doors of the manor.
-    2. Circumvent the manor and sneak in through a side entrance.
-
-    """)
     while True:
         first_choice = input()
         if first_choice == "1":
-            story.story_branch_a1()
+            story.story_branch_a()
+            enter_front_door()
             break
         elif first_choice == "2":
-            story.story_branch_a2()
+            story.story_branch_b()
             break
         else:
             print("Invalid choice, please enter 1 or 2")
+
+def enter_front_door():
+    enter_front_door = input()
+    if enter_front_door == "1":
+        story.branch_a1()
+    elif enter_front_door == "2":
+        story.branch_a2()
+    else:
+        print("Invalid choice, please enter 1 or 2")
+        enter_front_door()
 
 
 def main():
