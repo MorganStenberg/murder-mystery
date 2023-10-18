@@ -11,14 +11,14 @@ def introduction():
 
     print(
         """
-        Welcome, Detective Extraordinaire, to the grandest caper of them all - 'Murder Mystery'! 
-        Prepare to embark on a whirlwind adventure filled with more twists and turns than a contortionist on a rollercoaster.
-        In this puzzling escapade, you'll don the hat of a sharp-eyed investigator determined to untangle a web of secrets, lies, 
-        and intriguing characters. With the goal of finding the murderer and uncovering the truth! 
+Welcome, Detective Extraordinaire, to the grandest caper of them all - 'Murder Mystery'! 
+Prepare to embark on a whirlwind adventure filled with more twists and turns than a contortionist on a rollercoaster.
+In this puzzling escapade, you'll don the hat of a sharp-eyed investigator determined to untangle a web of secrets, lies, 
+and intriguing characters. With the goal of finding the murderer and uncovering the truth! 
         
-        But do remember that sometimes the path to the truth is not as straightforward as you might think.. 
+But do remember that sometimes the path to the truth is not as straightforward as you might think.. 
 
-        Do you think you have what it takes to uncover the secrets of Whodunit Manor? 
+Do you think you have what it takes to uncover the secrets of Whodunit Manor? 
 
         """)
 
@@ -55,12 +55,21 @@ def validate_username(username):
        
     if valid:
          print(f"Welcome detective {username}")
+         start_game()
 
     if valid is False:
         get_username()
 
    
-def start_game()
+def start_game():
+    while True:
+        print("Press Y to start game")
+        start_game = input()
+        if start_game == "y":
+            story.story_welcome()
+            break
+        else:
+            print("Wrong choice, do you not dare to take on this challenge?")
 
 def main():
     introduction()
