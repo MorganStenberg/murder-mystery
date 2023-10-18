@@ -84,6 +84,111 @@ What will be your next move, Detective?
 
         """
     )
+    
+def branch_a1_1():
+    print(
+        """
+Indeed, Lady Genevieve. I'm here to untangle this web of mystery. So, who among you has the most skeletons in their closet?
+
+You decide to start with a bold statement, hoping to shake loose any hidden secrets. The room falls momentarily silent, 
+interrupted only by the crackling of the fireplace.
+
+Uncle Reginald, his face turning a shade of crimson, sputters, "This is preposterous! How dare you imply such things?"
+Cousin Eliza raises an eyebrow, her expression cool and collected. "Detective, your approach is rather... direct."
+Miss Penelope, always quiet, shifts uncomfortably.
+
+However, one person stands out among the reactions. It's Lady Genevieve. Her composure falters for just a moment, 
+her eyes darting around the room before she regains her icy demeanor.
+
+In a huff, Uncle Reginald exclaims, "This is outrageous! I won't stand for this!" With that, 
+he storms out of the room, closely followed by Eliza and Miss Penelope.
+
+The atmosphere in the room has changed, it seems you've struck a nerve. 
+Now, it is only you Lady Genevieve still left in the room..
+
+You have two options:
+
+1. Press Lady Genevieve further about her reaction and any potential secrets.
+2. Follow the departing guests into the next room.
+
+What will you choose, Detective?
+
+        """
+    )
+
+def branch_a1_1_1():
+    print(
+        """
+Press Lady Genevieve further about her reaction and any potential secrets.
+
+You turn your attention back to Lady Genevieve, who stands with a steely resolve. 
+"Lady Genevieve, your reaction was quite telling. Is there something you're not telling me?"
+
+She hesitates for a moment, then sighs. 
+"Very well, Detective. There is a family secret, one that has haunted us for years. 
+Mortimer, my late brother, had been in a bitter dispute with Miss Penelope. 
+It involved a rather... peculiar matter."
+
+The room seems to hold its breath, the weight of the revelation pressing in from all sides.
+Lady Genevieve continues, her voice trembling, 
+"It was during a stormy night much like this one, years ago. 
+Mortimer and Miss Penelope had a heated argument about... believe it or not, 
+it was about the never-ending debate between Android and iPhone. 
+Mortimer was staunchly in favor of Android, while Miss Penelope, well, 
+she was a die-hard iPhone enthusiast."
+
+The gravity of the situation hits you, but in an unexpected way. 
+The absurdity of their disagreement juxtaposed with the serious tone 
+of Lady Genevieve's revelation is almost surreal.
+
+"And this seemingly trivial argument," she continues, 
+"led to a far more serious consequence. You see, the family trust fund, 
+set up by our late father, is managed by Mortimer. Despite not being the 
+eldest, he was given control due to our father's outdated beliefs. 
+He took advantage of this power and cut Miss Penelope off from her 
+rightful share, believing she couldn't handle the responsibility."
+
+
+This revelation adds a new layer to the mystery, one that hints at deeper family tensions and hidden motives.
+
+You have two options:
+
+1. Go into the next room to try and find Miss Penelope and ask her about the argument.
+2. Ask Lady Genevieve to call Miss Penelope to ask her to come back.
+
+What will be your next move, Detective?
+        """
+    )
+
+def branch_a1_1_1_1():
+    print(
+        """
+Go into the next room to try and find Miss Penelope and ask her about the argument.
+
+
+With newfound determination, you decide to seek out Miss Penelope to get her side of the story. 
+You make your way to the next room, your footsteps echoing in the silent halls.
+
+As you enter, you're enveloped in the warm glow of a roaring fire. 
+The room is a hunter's den, adorned with the spoils of countless 
+expeditions - deer heads, antlers, and an array of taxidermied creatures.
+
+In the dimly lit corner, a figure sits shrouded in shadow. 
+You strain your eyes to see, but before you can make out who it is, a shot pierces the air.
+
+The sound reverberates through the room, followed by the smell of gunpowder. 
+Your senses heighten, and for a moment, time seems to stand still. Then, a searing pain courses through you.
+
+You stagger, trying to comprehend what just happened. You catch a glimpse 
+of the figure rising from the shadows, but it's too late. Darkness claims you.
+
+---
+
+The story comes to a sudden, tragic end. Your pursuit of the truth met an untimely 
+demise in the heart of Whodunit Manor. The secrets of the manor, along with 
+the identity of Mortimer's killer, remain locked away forever.
+        """
+    )
 
 def branch_a2():
     print("Testing branch a2")

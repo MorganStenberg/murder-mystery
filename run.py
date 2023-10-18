@@ -4,7 +4,7 @@ import os
 import platform
 
 # Define global variable for username
-username = None
+# username = None
 
 def clear_screen():
     """
@@ -16,7 +16,6 @@ def clear_screen():
     else:
         os.system('clear')
     
-  
 
 def introduction():
     """
@@ -84,6 +83,7 @@ def start_game():
 def first_choice():
     """
     Asking the user for the first choice which takes them down different branches of the story
+    and calls the function for the chosen branch.
     """
     while True:
         first_choice = input()
@@ -98,6 +98,9 @@ def first_choice():
             print("Invalid choice, please enter 1 or 2")
 
 def enter_front_door():
+    """
+    Ask the user for the second choice, calling the function for the chosen branch of the story
+    """
     enter_front = input()
     if enter_front == "1":
         story.branch_a1()
