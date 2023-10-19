@@ -32,8 +32,8 @@ The atmosphere is thick with tension, but fear not! Your wit, charm, and keen de
 Now, it's time to take your first step into the labyrinth of clues and eccentricities that is Whodunit Manor. 
 Choose your path wisely, for the fate of this investigation rests squarely on your shoulders.
 
-    1. Enter through the front doors of the manor.
-    2. Circumvent the manor and sneak in through a side entrance.
+    A. Enter through the front doors of the manor.
+    B. Circumvent the manor and sneak in through a side entrance.
 
 What will you choose?
 

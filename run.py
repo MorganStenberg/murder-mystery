@@ -76,7 +76,7 @@ def start_game():
 
     while True:
         print("Press Y to start game")
-        start_game = input()
+        start_game = input().lower()
         if start_game == "y":
             clear_screen()
             story.welcome()
@@ -92,7 +92,7 @@ def first_choice():
     """
     global first_decision
     while True:
-        first_decision = input()
+        first_decision = input().lower()
         if first_decision == "a":
             clear_screen()
             story.branch_a()
