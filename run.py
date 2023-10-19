@@ -77,7 +77,7 @@ def start_game():
         start_game = input()
         if start_game == "y":
             clear_screen()
-            story.story_welcome()
+            story.welcome()
             first_choice()
             break
         else:
@@ -93,11 +93,11 @@ def first_choice():
     while True:
         first_decision = input()
         if first_decision == "a":
-            story.story_branch_a()
+            story.branch_a()
             second_choice()
             break
         elif first_decision == "b":
-            story.story_branch_b()
+            story.branch_b()
             second_choice()
             break
         else:

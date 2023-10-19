@@ -21,7 +21,7 @@ Do you think you have what it takes to uncover the secrets of Whodunit Manor?
         """
     )
 
-def story_welcome():
+def welcome():
     print(
         """
 You find yourself standing in front of the grand gates of Whodunit Manor, a sprawling estate shrouded in mystery. 
@@ -40,7 +40,7 @@ What will you choose?
         """
     )
 
-def story_branch_a():
+def branch_a():
     print(
         """
     Enter through the front doors of the manor
@@ -193,13 +193,13 @@ the identity of Mortimer's killer, remain locked away forever.
 def branch_a2():
     print("Testing branch a2")
 
-def story_branch_b():
+def branch_b():
     print("testing branch b")
 
-def story_branch_b1():
+def branch_b1():
     print("testing branch b1")
 
-def story_branch_b2():
+def branch_b2():
     print("testing branch b2")
 
 
