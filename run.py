@@ -20,13 +20,6 @@ def clear_screen():
         os.system('cls')
     else:
         os.system('clear')
-    
-
-def introduction():
-    """
-    Introduces the game to the user
-    """
-    story.introduction_text()
 
 
 def get_username():
@@ -355,7 +348,7 @@ def fifth_choice():
 
 
 def main():
-    introduction()
+    story.introduction_text()
     get_username()
 
 
