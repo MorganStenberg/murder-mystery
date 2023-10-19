@@ -143,7 +143,7 @@ of Lady Genevieve's revelation is almost surreal.
 
 "And this seemingly trivial argument," she continues, 
 "led to a far more serious consequence. You see, the family trust fund, 
-set up by our late father, is managed by Mortimer. Despite not being the 
+set up by our late father, was managed by Mortimer. Despite not being the 
 eldest, he was given control due to our father's outdated beliefs. 
 He took advantage of this power and cut Miss Penelope off from her 
 rightful share, believing she couldn't handle the responsibility."
@@ -154,7 +154,7 @@ This revelation adds a new layer to the mystery, one that hints at deeper family
 You have two options:
 
 1. Go into the next room to try and find Miss Penelope and ask her about the argument.
-2. Ask Lady Genevieve to call Miss Penelope to ask her to come back.
+2. Go up to Mortimers study to see if you can find some more clues.
 
 What will be your next move, Detective?
         """
@@ -191,7 +191,39 @@ the identity of Mortimer's killer, remain locked away forever.
     )
 
 def branch_a1_1_1_2():
-    print("testing branch_a1_1_1_2")
+    print(
+        """
+You decide to head to Mortimer's study, hoping to uncover any additional clues 
+that might shed light on the situation. The mansion's long corridors seem 
+to stretch endlessly, and the silence is palpable.
+
+As you ascend the grand staircase, the weight of anticipation 
+hangs heavy in the air. The study's door looms ahead, imposing 
+and enigmatic. You push it open, revealing a room filled with 
+bookshelves, parchment, and the faint scent of aged leather.
+
+Suddenly, you hear faint but distinct footsteps approaching. 
+Your heart quickens as you scan the room, 
+searching for a place to take cover.
+
+Then, a noise startles you. You turn, only to come 
+face-to-face with a shadowy figure. Before you can react, 
+a gunshot echoes through the room.
+
+Pain rips through your side, and you crumple to the ground.
+Your vision blurs, and the room seems to spin. 
+The figure steps forward, emerging from the shadows, 
+and for a brief moment, you see their face. 
+But it's the last thing you'll ever see.
+
+---
+
+The story takes a tragic turn as the detective's pursuit 
+of the truth ends in a sudden and violent demise. 
+The secrets of Whodunit Manor remain buried, 
+and the identity of Mortimer's killer remains a mystery.
+        """
+    )
 
 def branch_a1_1_2():
     print("testing branch_a1_1_2")

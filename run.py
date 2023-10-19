@@ -110,7 +110,8 @@ def first_choice():
 
 def second_choice():
     """
-    Ask the user for the second choice, calling the function for the chosen branch of the story
+    Ask the user for the second choice, calling the correct function 
+    for the chosen branch of the story depending on previous choices
     """
     global second_decision
     while True:
@@ -146,7 +147,8 @@ def second_choice():
 
 def third_choice():
     """
-    Ask the user for the third choice, calling the function for the chosen branch of the story
+    Ask the user for the third choice, calling the correct function 
+    for the chosen branch of the story depending on previous choices
     """
     global third_decision
     while True:
@@ -211,7 +213,8 @@ def third_choice():
 
 def fourth_choice():
     """
-    Ask the user for the fourth choice, calling the function for the chosen branch of the story
+    Ask the user for the fourth choice, calling the correct function 
+    for the chosen branch of the story depending on previous choices
     """
     global fourth_decision
     while True:
@@ -324,7 +327,28 @@ def fourth_choice():
                         print("Invalid choice, please enter 1 or 2")
                 
 
-
+def fifth_choice():
+    """
+    Ask the user for the fifth choice, calling the correct function 
+    for the chosen branch of the story depending on previous choices
+    """
+    global fifth_decision
+    while True:
+        fifth_decision = input()
+        if first_decision == "a":
+            if second_decision == "1":
+                if third_decision == "1":
+                    if fourth_decision == "1":
+                        if fifth_decision == "1":
+                            clear_screen()
+                            story.branch_a1_1_1_1()
+                            break
+                        elif fifth_decision == "2":
+                            clear_screen()
+                            story.branch_a1_1_1_2()
+                            break
+                        else: 
+                            print("Invalid choice, please enter 1 or 2")
 
 
    
