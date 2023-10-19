@@ -87,7 +87,9 @@ def first_choice():
     """
     Asking the user for the first choice which takes them down different branches of the story
     and calls the function for the chosen branch.
+
     """
+    global first_decision
     while True:
         first_decision = input()
         if first_decision == "a":
@@ -107,6 +109,7 @@ def second_choice():
     """
     Ask the user for the second choice, calling the function for the chosen branch of the story
     """
+    global second_decision
     while True:
         second_decision = input()
         if first_decision == "a":
@@ -131,13 +134,14 @@ def second_choice():
                 break
             else: 
                 print("Invalid choice, please enter 1 or 2")
-        return second_decision
+    return second_decision
 
 
 def third_choice():
     """
     Ask the user for the third choice, calling the function for the chosen branch of the story
     """
+    global third_decision
     while True:
         third_decision = input()
         if first_decision == "a":
@@ -188,7 +192,7 @@ def third_choice():
                     break
                 else: 
                     print("Invalid choice, please enter 1 or 2")
-        return third_decision
+    return third_decision
                 
 
 
@@ -204,12 +208,3 @@ def main():
 
 main()
 
-
- """enter_front = input()
-    if enter_front == "1":
-        story.branch_a1()
-    elif enter_front == "2":
-        story.branch_a2()
-    else:
-        print("Invalid choice, please enter 1 or 2")
-        second_choice()"""
