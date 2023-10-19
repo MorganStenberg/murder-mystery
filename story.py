@@ -196,4 +196,11 @@ def branch_a2():
 def story_branch_b():
     print("testing branch b")
 
+def story_branch_b1():
+    print("testing branch b1")
+
+def story_branch_b2():
+    print("testing branch b2")
+
+
 

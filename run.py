@@ -3,8 +3,11 @@ import story
 import os
 import platform
 
-# Define global variable for username
-# username = None
+# Define global variables
+first_decision = None
+second_decision = None
+third_decision = None
+
 
 def clear_screen():
     """
@@ -86,29 +89,112 @@ def first_choice():
     and calls the function for the chosen branch.
     """
     while True:
-        first_choice = input()
-        if first_choice == "1":
+        first_decision = input()
+        if first_decision == "a":
             story.story_branch_a()
-            enter_front_door()
+            second_choice()
             break
-        elif first_choice == "2":
+        elif first_decision == "b":
             story.story_branch_b()
+            second_choice()
             break
         else:
-            print("Invalid choice, please enter 1 or 2")
+            print("Invalid choice, please enter a or b")
+    return  first_decision
 
-def enter_front_door():
+
+def second_choice():
     """
     Ask the user for the second choice, calling the function for the chosen branch of the story
     """
-    enter_front = input()
-    if enter_front == "1":
-        story.branch_a1()
-    elif enter_front == "2":
-        story.branch_a2()
-    else:
-        print("Invalid choice, please enter 1 or 2")
-        enter_front_door()
+    while True:
+        second_decision = input()
+        if first_decision == "a":
+            if second_decision == "1":
+                story.branch_a1()
+                third_choice()
+                break
+            elif second_decision == "2":
+                story.branch_a2()
+                third_choice()
+                break
+            else: 
+                print("Invalid choice, please enter 1 or 2")
+        elif first_decision == "b":
+            if second_decision == "1":
+                story.branch_b1()
+                third_choice()
+                break
+            elif second_decision == "2":
+                story.branch_b2()
+                third_choice()
+                break
+            else: 
+                print("Invalid choice, please enter 1 or 2")
+        return second_decision
+
+
+def third_choice():
+    """
+    Ask the user for the third choice, calling the function for the chosen branch of the story
+    """
+    while True:
+        third_decision = input()
+        if first_decision == "a":
+            if second_decision == "1":
+                if third_decision == "1":
+                    story.branch_a1_1()
+                    fourth_choice()
+                    break
+                elif third_decision == "2":
+                    story.branch_a1_2()
+                    fourth_choice()
+                    break
+                else: 
+                    print("Invalid choice, please enter 1 or 2")
+        elif first_decision == "a":
+            if second_decision == "2":
+                if third_decision == "1":
+                    story.branch_a2_1()
+                    fourth_choice()
+                    break
+                elif third_decision == "2":
+                    story.branch_a2_2()
+                    fourth_choice()
+                    break
+                else: 
+                    print("Invalid choice, please enter 1 or 2")
+        elif first_decision == "b":
+            if second_decision == "1":
+                if third_decision == "1":
+                    story.branch_b1_1()
+                    fourth_choice()
+                    break
+                elif third_decision == "2":
+                    story.branch_b1_2()
+                    fourth_choice()
+                    break
+                else: 
+                    print("Invalid choice, please enter 1 or 2")
+        elif first_decision == "b":
+            if second_decision == "2":
+                if third_decision == "1":
+                    story.branch_b2_1()
+                    fourth_choice()
+                    break
+                elif third_decision == "2":
+                    story.branch_b2_2()
+                    fourth_choice()
+                    break
+                else: 
+                    print("Invalid choice, please enter 1 or 2")
+        return third_decision
+                
+
+
+
+
+   
 
 
 def main():
@@ -119,3 +205,11 @@ def main():
 main()
 
 
+ """enter_front = input()
+    if enter_front == "1":
+        story.branch_a1()
+    elif enter_front == "2":
+        story.branch_a2()
+    else:
+        print("Invalid choice, please enter 1 or 2")
+        second_choice()"""
