@@ -3,10 +3,12 @@ import story
 import os
 import platform
 
-# Define global variables
+# Define global variables for decisions by the user
 first_decision = None
 second_decision = None
 third_decision = None
+fourth_decision = None
+fifth_decision = None
 
 
 def clear_screen():
@@ -193,6 +195,106 @@ def third_choice():
                 else: 
                     print("Invalid choice, please enter 1 or 2")
     return third_decision
+
+
+def fourth_choice():
+    """
+    Ask the user for the fourth choice, calling the function for the chosen branch of the story
+    """
+    global fourth_decision
+    while True:
+        fourth_decision = input()
+        if first_decision == "a":
+            if second_decision == "1":
+                if third_decision == "1":
+                    if fourth_decision == "1":
+                        story.branch_a1_1_1()
+                        fifth_choice()
+                        break
+                    elif fourth_decision == "2":
+                        story.branch_a1_1_2()
+                        fifth_choice()
+                        break
+                    else: 
+                        print("Invalid choice, please enter 1 or 2")
+                elif third_decision == "2":
+                    if fourth_decision == "1":
+                        story.branch_a1_2_1()
+                        fifth_choice()
+                        break
+                    elif fourth_decision == "2":
+                        story.branch_a1_2_2()
+                        fifth_choice()
+                        break
+                    else:
+                        print("Invalid choice, please enter 1 or 2")
+            elif second_decision == "2":
+                if third_decision == "1":
+                    if fourth_decision == "1":
+                        story.branch_a2_1_1()
+                        fifth_choice()
+                        break
+                    elif fourth_decision == "2":
+                        story.branch_a2_1_2()
+                        fifth_choice()
+                        break
+                    else:
+                        print("Invalid choice, please enter 1 or 2")
+                elif third_decision == "2":
+                     if fourth_decision == "1":
+                        story.branch_a2_2_1()
+                        fifth_choice()
+                        break
+                    elif fourth_decision == "2":
+                        story.branch_a2_2_2()
+                        fifth_choice()
+                        break
+                    else:
+                        print("Invalid choice, please enter 1 or 2")
+        elif first_decision == "b":
+            if second_decision == "1":
+                if third_decision == "1":
+                    if fourth_decision == "1":
+                        story.branch_b1_1_1()
+                        fifth_choice()
+                        break
+                    elif fourth_decision == "2":
+                        story.branch_b1_1_2()
+                        fifth_choice()
+                        break
+                elif third_decision == "2":
+                    if fourth_decision == "1":
+                        story.branch_b1_2_1()
+                        fifth_choice()
+                        break
+                    elif fourth_decision == "2":
+                        story.branch_b1_2_2()
+                        fifth_choice()
+                        break
+                    else: 
+                        print("Invalid choice, please enter 1 or 2")
+            elif second_decision == "2":
+                 if third_decision == "1":
+                    if fourth_decision == "1":
+                        story.branch_b2_1_1()
+                        fifth_choice()
+                        break
+                    elif fourth_decision == "2":
+                        story.branch_b2_1_2()
+                        fifth_choice()
+                        break
+                elif third_decision == "2":
+                    if fourth_decision == "1":
+                        story.branch_b2_2_1()
+                        fifth_choice()
+                        break
+                    elif fourth_decision == "2":
+                        story.branch_b2_2_2()
+                        fifth_choice()
+                        break
+                    else: 
+                        print("Invalid choice, please enter 1 or 2")
+    return fourth_decision
                 
 
 
