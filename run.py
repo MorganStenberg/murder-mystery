@@ -63,7 +63,7 @@ def validate_username(username):
     if valid:
         print(f"Welcome detective {username}")
         start_game()
-         
+
     if valid is False:
         get_username()
     
@@ -105,7 +105,7 @@ def first_choice():
             break
         else:
             print("Invalid choice, please enter a or b")
-    return  first_decision
+    
 
 
 def second_choice():
@@ -141,7 +141,7 @@ def second_choice():
                 break
             else: 
                 print("Invalid choice, please enter 1 or 2")
-    return second_decision
+    
 
 
 def third_choice():
@@ -207,7 +207,6 @@ def third_choice():
                     break
                 else: 
                     print("Invalid choice, please enter 1 or 2")
-    return third_decision
 
 
 def fourth_choice():
@@ -323,7 +322,6 @@ def fourth_choice():
                         break
                     else: 
                         print("Invalid choice, please enter 1 or 2")
-    return fourth_decision
                 
 
 
