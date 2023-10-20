@@ -269,4 +269,6 @@ def branch_b2():
     print("testing branch b2")
 
 
+def end_of_game_text():
+    print("testing end of game text")
 

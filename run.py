@@ -337,16 +337,39 @@ def fifth_choice():
                         if fifth_decision == "1":
                             clear_screen()
                             story.branch_a1_1_1_1()
+                            time.sleep(1)
+                            end_of_game()
                             break
                         elif fifth_decision == "2":
                             clear_screen()
                             story.branch_a1_1_1_2()
+                            time.sleep(1)
+                            end_of_game()
                             break
                         else: 
                             print("Invalid choice, please enter 1 or 2")
 
 
-   
+def end_of_game():
+    global first_decision
+    global second_decision 
+    global third_decision 
+    global fourth_decision 
+    global fifth_decision 
+    first_decision = None
+    second_decision = None
+    third_decision = None
+    fourth_decision = None
+    fifth_decision = None
+    
+    end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
+    if end_or_restart == "y":
+        clear_screen()
+        start_game()
+    elif end_or_restart == "n":
+        clear_screen()
+        story.end_of_game_text()
+
 
 
 def main():
