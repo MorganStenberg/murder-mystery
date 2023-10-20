@@ -2,6 +2,7 @@
 import story
 import os
 import platform
+import time #To delay printing of text for user
 
 # Define global variables for decisions by the user
 first_decision = None
@@ -68,10 +69,11 @@ def start_game():
     """
 
     while True:
-        print("Press Y to start game")
+        print("Press Y to start game\n")
         start_game = input().lower()
         if start_game == "y":
             clear_screen()
+            time.sleep(1)
             story.welcome()
             first_choice()
             break
