@@ -94,20 +94,20 @@ def make_choice():
 
    
     while True:
-        decisions = input(f"Enter choice {len(list_of_decision) + 1}")
+        decisions = input(f"Enter choice {len(list_of_decision)}")
 
-        if decisions != "a" and decisions != "b":
-            break
+        if decisions in {"a", "b"}:
+            
+            list_of_decision.append(decisions)
+            function_call = ''.join(list_of_decision)
 
-        list_of_decision.append(decisions)
-
-        function_call = ''.join(list_of_decision)
-    
-
-        if function_call in story.map_of_functions:
-            story.map_of_functions[function_call]()
+            if function_call in story.map_of_functions:
+                story.map_of_functions[function_call]()
+            else:
+                print("no function found")
         else:
-            print("no function found")
+            print("Invalid choice, please input A or B")
+
         
         
 
@@ -381,14 +381,9 @@ def fifth_choice():
                         else: 
                             print("Invalid choice, please enter 1 or 2")
 
-""" 
-Function to be called when the game is over for the user, to ask if they want 
-to play again or quit. 
-
-TO BE REFACTORED
 
 def end_of_game():
-    global first_decision
+    """global first_decision
     global second_decision 
     global third_decision 
     global fourth_decision 
@@ -397,7 +392,7 @@ def end_of_game():
     second_decision = None
     third_decision = None
     fourth_decision = None
-    fifth_decision = None
+    fifth_decision = None"""
     
     end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
     if end_or_restart == "y":
@@ -406,7 +401,7 @@ def end_of_game():
     elif end_or_restart == "n":
         clear_screen()
         story.end_of_game_text()
-"""
+
 
 
 def main():

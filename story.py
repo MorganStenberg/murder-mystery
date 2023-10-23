@@ -193,7 +193,7 @@ demise in the heart of Whodunit Manor. The secrets of the manor, along with
 the identity of Mortimer's killer, remain locked away forever.
         """
     )
-    end_of_game.end_game()
+    
 
 def branch_a1_1_1_2():
     print(
@@ -229,7 +229,7 @@ The secrets of Whodunit Manor remain buried,
 and the identity of Mortimer's killer remains a mystery.
         """
     )
-    end_of_game.end_game()
+
 
 def branch_a1_1_2():
     print("testing branch_a1_1_2")
@@ -274,6 +274,9 @@ def branch_b1():
 def branch_b2():
     print("testing branch b2")
 
+
+def end_of_game_text():
+    print("testing end of game text")
 
 #testing putting functions in dictionary for refactoring decision function
 map_of_functions = {

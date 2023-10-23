@@ -13,10 +13,8 @@ def end_game():
     
     end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
     if end_or_restart == "y":
-        clear_screen()
         start_game()
     elif end_or_restart == "n":
-        clear_screen()
         end_of_game_text()
 
 def end_of_game_text():
