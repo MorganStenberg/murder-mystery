@@ -92,6 +92,8 @@ def make_choice():
     global decisions
     global list_of_decision
 
+    list_of_decision = []
+    decisions = None
    
     while True:
         decisions = input(f"Enter choice {len(list_of_decision)}")
@@ -102,9 +104,20 @@ def make_choice():
             function_call = ''.join(list_of_decision)
 
             if function_call in story.map_of_functions:
+                clear_screen()
+                time.sleep(0.5)
                 story.map_of_functions[function_call]()
             else:
-                print("no function found")
+                end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
+                if end_or_restart == "y":
+                    clear_screen()
+                    story.welcome()
+                    make_choice()
+                    break
+                elif end_or_restart == "n":
+                    clear_screen()
+                    story.end_of_game_text()
+                    break
         else:
             print("Invalid choice, please input A or B")
 

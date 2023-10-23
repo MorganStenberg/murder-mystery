@@ -9,8 +9,8 @@ This file is imported in both run.py and story.py
 
 
 def end_game():
-    
-    
+    """
+    """
     end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
     if end_or_restart == "y":
         start_game()
