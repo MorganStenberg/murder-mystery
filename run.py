@@ -69,6 +69,10 @@ def start_game():
     Asks the user to start the game via pressing Y
     prints message if the user does not press Y. 
     """
+    global list_of_decision
+    global decisions
+    list_of_decision = []
+    decisions = None
 
     while True:
         print("Press Y to start game\n")
@@ -376,6 +380,11 @@ def fifth_choice():
                         else: 
                             print("Invalid choice, please enter 1 or 2")
 
+""" 
+Function to be called when the game is over for the user, to ask if they want 
+to play again or quit. 
+
+TO BE REFACTORED
 
 def end_of_game():
     global first_decision
@@ -396,7 +405,7 @@ def end_of_game():
     elif end_or_restart == "n":
         clear_screen()
         story.end_of_game_text()
-
+"""
 
 
 def main():

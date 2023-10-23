@@ -278,5 +278,7 @@ def end_of_game_text():
 map_of_functions = {
     'a': branch_a,
     'aa': branch_a1,
-    'aaa': branch_a1_1
+    'aaa': branch_a1_1,
+    'aaaa': branch_a1_1_1,
+    'aaaaa': branch_a1_1_1_1,
 }
