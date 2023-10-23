@@ -8,7 +8,7 @@ This file is imported in both run.py and story.py
 """
 
 
-def end_of_game():
+def end_game():
     
     
     end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
@@ -17,4 +17,7 @@ def end_of_game():
         start_game()
     elif end_or_restart == "n":
         clear_screen()
-        story.end_of_game_text()
+        end_of_game_text()
+
+def end_of_game_text():
+    print("testing end of game text")

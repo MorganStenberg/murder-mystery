@@ -1,5 +1,6 @@
 
 import story
+import end_of_game
 import os
 import platform
 import time #To delay printing of text for user
