@@ -5,6 +5,8 @@ which will be called depending on the choices by the user
 
 """
 
+
+
 def introduction_text():
     print(
         """
@@ -272,3 +274,9 @@ def branch_b2():
 def end_of_game_text():
     print("testing end of game text")
 
+#testing putting functions in dictionary for refactoring decision function
+map_of_functions = {
+    'a': branch_a,
+    'aa': branch_a1,
+    'aaa': branch_a1_1
+}

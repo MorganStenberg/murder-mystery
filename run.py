@@ -10,6 +10,8 @@ second_decision = None
 third_decision = None
 fourth_decision = None
 fifth_decision = None
+list_of_decision = []
+decisions = None
 
 
 def clear_screen():
@@ -75,10 +77,35 @@ def start_game():
             clear_screen()
             time.sleep(1)
             story.welcome()
-            first_choice()
+            make_choice()
             break
         else:
             print("Wrong choice, do you not dare to take on this challenge?")
+
+#testing to refactor decision function
+def make_choice():
+    global decisions
+    global list_of_decision
+
+   
+    while True:
+        decisions = input(f"Enter choice {len(list_of_decision) + 1}")
+
+        if decisions != "a" and decisions != "b":
+            break
+
+        list_of_decision.append(decisions)
+
+        function_call = ''.join(list_of_decision)
+    
+
+        if function_call in story.map_of_functions:
+            story.map_of_functions[function_call]()
+        else:
+            print("no function found")
+        
+        
+
 
 def first_choice():
     """
