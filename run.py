@@ -87,6 +87,7 @@ def start_game():
         else:
             print("Wrong choice, do you not dare to take on this challenge?")
 
+
 #testing to refactor decision function
 def make_choice():
     global decisions
@@ -96,10 +97,12 @@ def make_choice():
     decisions = None
    
     while True:
+        available_paths = [key for key in story.map_of_functions.keys() if len(key) == (len(list_of_decision)+1)]
+        print(f"available paths here: {available_paths}")
+
         decisions = input(f"Enter choice {len(list_of_decision)}")
 
         if decisions in {"a", "b"}:
-            
             list_of_decision.append(decisions)
             function_call = ''.join(list_of_decision)
 
@@ -107,6 +110,7 @@ def make_choice():
                 clear_screen()
                 time.sleep(0.5)
                 story.map_of_functions[function_call]()
+                print(f"list of decisions here:{list_of_decision}")
             else:
                 end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
                 if end_or_restart == "y":
@@ -420,7 +424,6 @@ def end_of_game():
 def main():
     story.introduction_text()
     get_username()
-
 
 main()
 

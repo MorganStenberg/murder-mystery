@@ -285,4 +285,5 @@ map_of_functions = {
     'aaa': branch_a1_1,
     'aaaa': branch_a1_1_1,
     'aaaaa': branch_a1_1_1_1,
+    'aaaab': branch_a1_1_1_2,
 }
