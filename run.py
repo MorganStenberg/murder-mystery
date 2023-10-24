@@ -132,6 +132,10 @@ def make_choice():
 
 
 def main():
+    """
+    Starts the game by printing introduction text and then calling function to start
+    game via asking the user for username.
+    """
     print(story.INTRODUCTION_TEXT)
     username = start_game_get_username()
 

@@ -236,10 +236,123 @@ def branch_a1_1_2():
     print("testing branch_a1_1_2")
 
 def branch_a1_2():
-    print("Testing branch_a1_2")
+    print(
+        """
+ You decide to take a more diplomatic approach and engage in some small talk before delving into the heart of the matter. 
+ After exchanging pleasantries with the gathered family members, you ask about the events leading up to Mortimer's untimely demise.
+
+Lady Genevieve takes a deep breath, her gaze distant. "It was a stormy night, much like tonight. We were all 
+gathered in the drawing room, discussing family matters. Mortimer seemed... on edge."
+
+Before she can continue, a voice from the other side of the room cuts in sharply. 
+"Nonsense, Genevieve! Mortimer was perfectly fine! He was in high spirits, excited about an upcoming business venture."
+
+The speaker, Uncle Reginald, a stern-looking man with a no-nonsense air, stands tall, challenging Lady Genevieve's account. 
+Tension fills the room as the rest of the family looks on, divided.
+
+Miss Penelope, with a glint of mischief in her eyes, interjects, "Oh, come now! Let's not rehash old arguments. 
+It won't do anyone any good."
+
+With a gracious smile, she turns to you. 
+"Detective, might I trouble you for a glass of champagne? I believe it's high time we toast to Mortimer's memory."
+
+She leaves the room, her footsteps echoing down the hallway. The family members exchange uneasy glances, 
+leaving an air of anticipation in her wake.
+
+You now have two options:
+
+A. Press Lady Genevieve to continue her account of the events.
+B. Turn your attention to the stern-looking man and ask for his version of what happened.
+
+How would you like to proceed, Detective?
+        """
+
+    )
 
 def branch_a1_2_1():
-    print("testing branch_a1_2_1")
+    print(
+        """
+You turn your attention back to Lady Genevieve, encouraging her to share more about the fateful night. 
+She takes a deep breath and begins, her voice steady yet tinged with sadness.
+
+"As I said.. It was a stormy night, much like tonight. We were all gathered in the drawing room, 
+discussing family matters. Mortimer seemed... on edge."
+
+Just as she's about to reveal the nature of the heated argument, 
+a sudden crash resounds through the mansion, followed by the sound of shattering glass. 
+The family members jump in their seats, their faces pale with shock.
+
+You rush to the window and see a shattered vase, its remnants scattered across the floor. 
+Lady Genevieve gasps, clutching her chest.
+
+"What in the world..." she begins, her voice trembling.
+
+Before anyone can react, the lights flicker and then go out entirely. 
+The room is plunged into darkness, and a collective gasp sweeps through the family.
+
+From the shadows, a voice breaks the silence. "I know what happened that night," 
+it declares, sending a shiver down your spine.
+
+The room falls silent once more.. 
+
+You have two options:
+
+A. Demand that the mysterious voice reveals who they are.
+B. You remember that you have a flashlight on your phone.. You turn it on and direct it towards where you 
+heard the voice.
+
+What will be your next move, Detective?
+
+        """
+    )
+
+def branch_a1_2_1_1():
+    print(
+        """
+Unable to bear the tension any longer, you raise your voice with authority. "Enough of this! Reveal yourself, now!"
+
+As the words leave your mouth, chaos erupts in the room. Some family members scramble in the darkness, 
+attempting to find their way to the door. The atmosphere is charged with fear and confusion.
+
+Amidst the commotion, a faint whisper reaches your ear. "I know who the killer is... Meet me in the basement."
+
+The voice is barely audible, but the urgency in it is unmistakable. You try to discern the speaker, 
+but the darkness conceals them. The message hangs in the air, and you're faced with a crucial decision.
+
+You have two options:
+
+A. Head to the basement to meet the mysterious whisperer. 
+B. Stay in the drawing room and try to restore order amidst the chaos. Perhaps you can find a way to get the lights back on.
+
+
+What will be your next move, Detective?
+
+        """
+    )
+
+def branch_a1_2_1_1_1():
+    print(
+        """
+With a sense of urgency, you make your way through the darkened mansion, guided only by your flashlight. 
+The air grows colder as you descend the narrow staircase leading to the basement.
+
+As you approach the bottom of the surprisingly steep stairs, just as you start to make out 
+that there are candles lit along the wall below the stairs, an unseen force slams into your back. 
+You lose your balance, tumbling forward into the abyss.
+
+Pain surges through your body as you collide with the ground, a searing agony that leaves you breathless. 
+In the dim light of your flashlight, you glimpse strange symbols and eerie markings adorning the walls.
+
+Gasping for air, you lay there, your vision fading, the symbols etched into your memory. 
+You realize, too late, the sinister truth hidden within Whodunit Manor.
+
+---
+
+The detective's pursuit of the truth ends in a chilling and untimely demise. 
+The secrets of Whodunit Manor, particularly the sinister activities in the basement, 
+remain forever shrouded in mystery.
+        """
+    )
 
 def branch_a1_2_2():
     print("testing branch_a1_2_2")
