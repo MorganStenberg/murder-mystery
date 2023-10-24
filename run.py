@@ -59,16 +59,17 @@ def validate_username(username):
        
     if valid:
         print(f"Welcome detective {username}")
-        start_game()
+        initialize_game()
 
     if valid is False:
         get_username()
     
    
-def start_game():
+def initialize_game():
     """
     Asks the user to start the game via pressing Y
-    prints message if the user does not press Y. 
+    Resets global variables
+    Calls correct functions to start game
     """
     global list_of_decision
     global decisions
@@ -77,8 +78,8 @@ def start_game():
 
     while True:
         print("Press Y to start game\n")
-        start_game = input().lower()
-        if start_game == "y":
+        initialize_game = input().lower()
+        if initialize_game == "y":
             clear_screen()
             time.sleep(1)
             story.welcome()
@@ -418,7 +419,7 @@ def end_of_game():
     end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
     if end_or_restart == "y":
         clear_screen()
-        start_game()
+        initialize_game()
     elif end_or_restart == "n":
         clear_screen()
         story.end_of_game_text()
