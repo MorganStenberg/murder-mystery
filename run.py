@@ -6,11 +6,6 @@ import platform
 import time #To delay printing of text for user
 
 # Define global variables for decisions by the user
-first_decision = None
-second_decision = None
-third_decision = None
-fourth_decision = None
-fifth_decision = None
 list_of_decision = []
 decisions = None
 

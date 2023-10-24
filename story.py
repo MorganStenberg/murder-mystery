@@ -55,8 +55,8 @@ As you step inside, a butler, impeccably dressed, approaches with a polite bow. 
 
 You have two options:
 
-    1. Follow the butler to the drawing room.
-    2. Politely decline and explore the manor on your own.
+    A. Follow the butler to the drawing room.
+    B. Politely decline and explore the manor on your own.
 
 What will you choose?
 
@@ -81,8 +81,8 @@ As she speaks, you notice a flicker of something in her eyes - a mix of sorrow a
 
 You have two options:
 
-1. Indeed, Lady Genevieve. I'm here to untangle this web of mystery. So, who among you has the most skeletons in their closet?
-2. Exchange pleasantries and ask about the events leading up to the unfortunate incident?
+A. Indeed, Lady Genevieve. I'm here to untangle this web of mystery. So, who among you has the most skeletons in their closet?
+B. Exchange pleasantries and ask about the events leading up to the unfortunate incident?
 
 What will be your next move, Detective?
 
@@ -112,8 +112,8 @@ Now, it is only you Lady Genevieve still left in the room..
 
 You have two options:
 
-1. Press Lady Genevieve further about her reaction and any potential secrets.
-2. Follow the departing guests into the next room.
+A. Press Lady Genevieve further about her reaction and any potential secrets.
+B. Follow the departing guests into the next room.
 
 What will you choose, Detective?
 
@@ -157,8 +157,8 @@ This revelation adds a new layer to the mystery, one that hints at deeper family
 
 You have two options:
 
-1. Go into the next room to try and find Miss Penelope and ask her about the argument.
-2. Go up to Mortimers study to see if you can find some more clues.
+A. Go into the next room to try and find Miss Penelope and ask her about the argument.
+B. Go up to Mortimers study to see if you can find some more clues.
 
 What will be your next move, Detective?
         """
