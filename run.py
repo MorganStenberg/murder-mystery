@@ -120,12 +120,16 @@ def make_choice():
                     clear_screen()
                     story.end_of_game_text()
                     break
+            else:
+                print("Invalid choice, please input Y or N")
+
 
 
 
 def main():
     print(story.INTRODUCTION_TEXT)
-    get_username()
+    username = get_username()
 
-main()
+if __name__ == "__main__":
+    main()
 
