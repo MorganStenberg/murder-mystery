@@ -1,17 +1,18 @@
-import end_of_game
+
 
 """ 
 This file contains the story for the game. 
+The introduction text is declared as a variable.
 The different branches of the story are defined as different functions 
 which will be called depending on the choices by the user
+
+This file is imported in to the run.py file. 
 
 """
 
 
 
-def introduction_text():
-    print(
-        """
+INTRODUCTION_TEXT = """
 Welcome, Detective Extraordinaire, to the grandest caper of them all - 'Murder Mystery'! 
 
 Prepare to embark on a whirlwind adventure filled with more twists and turns than a contortionist on a rollercoaster.
@@ -22,8 +23,8 @@ and intriguing characters. With the goal of finding the murderer and uncovering 
 But do remember that sometimes the path to the truth is not as straightforward as you might think.. 
 
 Do you think you have what it takes to uncover the secrets of Whodunit Manor? 
-        """
-    )
+"""
+    
 
 def welcome():
     print(

@@ -124,7 +124,7 @@ def make_choice():
 
 
 def main():
-    story.introduction_text()
+    print(story.INTRODUCTION_TEXT)
     get_username()
 
 main()
