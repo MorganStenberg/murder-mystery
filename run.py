@@ -68,13 +68,8 @@ def validate_username(username):
 def initialize_game():
     """
     Asks the user to start the game via pressing Y
-    Resets global variables
     Calls correct functions to start game
     """
-    global list_of_decision
-    global decisions
-    list_of_decision = []
-    decisions = None
 
     while True:
         print("Press Y to start game\n")
@@ -89,8 +84,14 @@ def initialize_game():
             print("Wrong choice, do you not dare to take on this challenge?")
 
 
-#testing to refactor decision function
+
 def make_choice():
+    """
+    Handles the main logic for the game and all the user choices. 
+    Traverses through the different branches depending on the user input. 
+    When the end of a branch is reached, asks the user if they want to restart the game.
+    Sets global variables needed for game. 
+    """
     global decisions
     global list_of_decision
 
