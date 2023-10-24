@@ -21,9 +21,9 @@ def clear_screen():
         os.system('clear')
 
 
-def get_username():
+def start_game_get_username():
     """
-    Gets username from user
+    Starts the game by asking the user for a username
     """
     print("Please select your detective name..")
     username = input("Enter your name here: \n")
@@ -57,7 +57,7 @@ def validate_username(username):
         initialize_game()
 
     if valid is False:
-        get_username()
+        start_game_get_username()
     
    
 def initialize_game():
@@ -67,13 +67,18 @@ def initialize_game():
     """
 
     while True:
-        print("Press Y to start game\n")
+        print("Press Y to start game. Q to quit the game\n")
         initialize_game = input().lower()
         if initialize_game == "y":
             clear_screen()
             time.sleep(1)
             story.welcome()
             make_choice()
+            break
+        elif initialize_game == "q":
+            clear_screen()
+            time.sleep(1)
+            story.end_of_game_text()
             break
         else:
             print("Wrong choice, do you not dare to take on this challenge?")
@@ -128,7 +133,7 @@ def make_choice():
 
 def main():
     print(story.INTRODUCTION_TEXT)
-    username = get_username()
+    username = start_game_get_username()
 
 if __name__ == "__main__":
     main()
