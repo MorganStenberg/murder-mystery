@@ -100,31 +100,35 @@ def make_choice():
         available_paths = [key for key in story.map_of_functions.keys() if len(key) == (len(list_of_decision)+1)]
         print(f"available paths here: {available_paths}")
 
-        decisions = input(f"Enter choice {len(list_of_decision)}")
-
-        if decisions in {"a", "b"}:
-            list_of_decision.append(decisions)
-            function_call = ''.join(list_of_decision)
-
-            if function_call in story.map_of_functions:
-                clear_screen()
-                time.sleep(0.5)
-                story.map_of_functions[function_call]()
-                print(f"list of decisions here:{list_of_decision}")
+        if available_paths > list_of_decision:
+            decisions = input("Enter choice \n").lower()
+            if decisions in {"a", "b"}:
+                list_of_decision.append(decisions)
+                function_call = ''.join(list_of_decision)
+                if function_call in story.map_of_functions:
+                    clear_screen()
+                    time.sleep(0.5)
+                    story.map_of_functions[function_call]()
+                    print(f"list of decisions here:{list_of_decision}")
             else:
-                end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
-                if end_or_restart == "y":
+                print("Invalid choice, please input A or B")
+        elif available_paths < list_of_decision:
+            end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
+            if end_or_restart == "y":
                     clear_screen()
                     story.welcome()
                     make_choice()
                     break
-                elif end_or_restart == "n":
+            elif end_or_restart == "n":
                     clear_screen()
                     story.end_of_game_text()
                     break
-        else:
-            print("Invalid choice, please input A or B")
+            
 
+      
+
+            
+                
         
         
 
