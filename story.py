@@ -192,6 +192,8 @@ of the figure rising from the shadows, but it's too late. Darkness claims you.
 The story comes to a sudden, tragic end. Your pursuit of the truth met an untimely 
 demise in the heart of Whodunit Manor. The secrets of the manor, along with 
 the identity of Mortimer's killer, remain locked away forever.
+
+THE END.
         """
     )
     
@@ -228,6 +230,8 @@ The story takes a tragic turn as the detective's pursuit
 of the truth ends in a sudden and violent demise. 
 The secrets of Whodunit Manor remain buried, 
 and the identity of Mortimer's killer remains a mystery.
+
+THE END.
         """
     )
 
@@ -267,6 +271,8 @@ The truth of Mortimer's demise, along with the answers you sought, remain locked
 
 The detective's pursuit of the truth takes an unforeseen turn, culminating in a deadly encounter. 
 The enigma of Whodunit Manor remains unsolved.
+
+THE END.
 
     """)
 
@@ -365,6 +371,8 @@ The detective's pursuit of the truth ends in a chilling and untimely demise.
 The secrets of Whodunit Manor, particularly the sinister activities in the basement, 
 remain forever shrouded in mystery.
 
+THE END.
+
         """
     )
 
@@ -377,23 +385,29 @@ the room in a sudden, startling brightness. Simultaneously, you've already begun
 creating a bizarre contrast of noise and light.
 
 The room falls into a stunned silence. The family members exchange concerned looks, 
-clearly taken aback by this unexpected turn of events. You can almost feel their unease radiating from them.
+clearly taken aback by this unexpected turn of events. 
+You can almost feel their unease radiating from them.
 
 Lady Genevieve clears her throat, breaking the silence. 
 "I think... perhaps we've all had enough excitement for one evening."
 
 There's a murmur of agreement among the family members. It's clear that they're now 
 convinced that you've, for lack of a better term, lost it. They exchange glances, 
-and you catch snippets of conversation about hiring someone else, perhaps that famous detective, Benoit Blanc.
+and you catch snippets of conversation about hiring someone else, 
+perhaps that famous detective, Benoit Blanc.
 
 You nod, feeling a strange mixture of embarrassment and bewilderment. 
-As you are make your way to the door, you can't help but wonder how you ended up as the star of this peculiar show.
+As you are make your way to the door, you can't help but wonder 
+how you ended up as the star of this peculiar show.
 
 ---
 
-The detective's attempt at restoring order takes an unexpected turn, leading to the family losing confidence in your ability to solve the case. With the decision made to seek the assistance of another detective, you make your exit from Whodunit Manor.
+The detective's attempt at restoring order takes an unexpected turn, 
+leading to the family losing confidence in your ability to solve the case. 
+With the decision made to seek the assistance of another detective, 
+you make your exit from Whodunit Manor.
 
-
+THE END.
         """
     )
 
@@ -526,6 +540,8 @@ In this shadowy realm, the fervor for Python eclipses all else.
 Your attempt to navigate this treacherous path will leave an 
 indelible mark on the annals of Whodunit Manor, even if it remains shrouded in secrecy.
 
+THE END.
+
         """
     )
 
@@ -564,6 +580,8 @@ an obsession that ultimately led to Mortimer's demise.
 
 Your actions have solved the mystery and have preserved the 
 diversity of programming languages for generations to come.
+
+THE END.
 
     """)
 
@@ -685,6 +703,8 @@ The cult-like atmosphere in the basement speaks volumes.
 The secrets of Whodunit Manor, and the extent of their devotion to... whatever this is, 
 remain shrouded in darkness.
 
+THE END.
+
         """
     )
 
@@ -717,18 +737,180 @@ This intruder will face the full extent of the law."
 In a short while, the police arrive and take you into custody. 
 The truth of Mortimer's demise, along with any other mysteries 
 the manor holds, will remain forever shrouded.
+
+THE END.
         """
     )
 
 
 def branch_b():
-    print("testing branch b")
+    print(
+        """
+Circumvent the manor and sneak in through a side entrance. 
+
+You decide to take a more discreet approach and circumvent 
+the grand front doors. After a bit of exploration, you discover 
+a side entrance that seems less conspicuous. 
+
+As you slip inside, you find yourself in a dimly lit corridor, 
+lined with family portraits that seem to watch your every move. 
+You move quietly, your senses on high alert. 
+
+After a short distance, you come across an unmarked door. 
+It seems out of place, as if deliberately hidden from casual view. 
+You can't shake the feeling that there's something significant behind it. 
+
+You have two options: 
+
+A. Open the door and see what lies beyond. 
+B. Continue exploring the house.
+
+        """
+    )
 
 def branch_b1():
-    print("testing branch b1")
+    print(
+        """
+You decide to continue exploring the house. 
+
+You meander through dimly lit hallways, tracing your fingers along the elaborate wallpaper that seems to whisper ancient secrets. 
+
+The air grows colder as you find a door that seems to lead to a basement, you creek it open silently and look down, there seems to be some flickering lights down there. 
+
+At the same time you hear steps approaching.. 
+
+You have two options
+
+A. Run away from the approaching steps
+B. Go down in the basement
+        """
+    )
+
+def branch_b1_1():
+    print(
+        """
+As the steps draw nearer, your heart races. Instinct takes over, and you quietly 
+slip away, retracing your steps through the dark hallways. 
+
+You find yourself in front of an imposing door, which, when opened, reveals a 
+richly furnished study. It's clear this is where Mortimer, the head of the 
+household, conducts his business.
+
+Your eyes scan the room, searching for anything that might hold a clue. That's 
+when you spot it - a laptop, resting on an ornate desk. It flickers to life as 
+you approach, revealing a video file prominently displayed.
+
+With a mix of trepidation and determination, you click play.
+
+The screen comes to life, displaying a chilling scene of a darkened chamber, 
+adorned with arcane symbols. Figures cloaked in shadows move in deliberate 
+motions, their voices raised in an eerie chant. The ritual is unmistakable - 
+this is a cult, and it seems to be connected to some sort of snake like creature, maybe a Python..?
+
+    What do you do next?
+
+    A. This is too wierd to handle on your own, call the authorities.
+    B. Leave the study and continue exploring the house, taking with you the laptop.
+
+        """
+
+    )
+
+def branch_b1_1_1():
+    print(
+        """
+You quickly pull out your phone and dial the emergency number. Within minutes, 
+the calm yet assertive voice of an operator reassures you that help is on the way.
+
+Soon, the manor is alive with the flashing lights of police cars and the murmur 
+of officers combing through every nook and cranny. The family members are taken 
+into custody, their bewildered expressions evidence of their shock and disbelief.
+
+As the investigation deepens, it becomes clear that the strange cult was indeed 
+using Python as a means of communication, hiding messages in plain sight. Their 
+motives remain shrouded in mystery, but the danger they posed has been extinguished.
+
+You watch from a distance, satisfied that your quick thinking and bravery led to 
+the unraveling of this bizarre case. With the manor now secured, you make your 
+exit, knowing that you've once again proven yourself as a true Detective Extraordinaire.
+
+    THE END.
+        """
+    )
+
+    
+
+def branch_b1_1_2():
+    print(
+        """
+You carefully pick up the laptop, tucking it under your arm. Determined to 
+uncover the secrets of Whodunit Manor, you quietly exit the study, making your 
+way back into the dimly lit hallway.
+
+Just as you turn the corner, a sharp voice cuts through the silence. "And where 
+do you think you're going with that?" It's the butler, his eyes narrow and 
+suspicious.
+
+Caught off guard, you stammer for words, but before you can respond, he lunges 
+forward with surprising agility. In an instant, a heavy object connects with 
+your head, sending you spiraling into darkness.
+
+When you finally regain consciousness, your head throbs with pain. Blinking 
+against the dim light, you realize you're in the basement. You're bound to 
+a chair, The laptop sits on a nearby table, just out of reach. The dim light casts
+eerie shadows on the walls, illuminating strange snake like symbols etched
+into the stone.
+
+
+It's clear now that this family is entangled in something
+far more sinister than you could have imagined.
+The cult-like atmosphere in the basement speaks volumes.
+
+The secrets of Whodunit Manor, and the extent of their devotion to... whatever this is,
+remain shrouded in darkness.
+
+THE END.
+
+        """
+    )
+
+
+
+def branch_b1_2():
+
 
 def branch_b2():
-    print("testing branch b2")
+    print(
+        """
+    Open the door and see what lies beyond.
+
+You can't resist the urge to uncover the mystery behind this hidden door. 
+
+With a determined push, it creaks open to reveal a small, dimly lit room 
+filled with an array of electronic equipment. It's unmistakably a server room.
+
+Your eyes scan the room, and you notice a console with a blinking red button, 
+immediately drawing your attention. It's a curious sight in this old manor.
+
+As you approach, a sense of unease washes over you. You hesitantly press the button, 
+and a low hum fills the room. Suddenly, a blinding light engulfs your vision, and 
+you feel an overwhelming sense of disorientation.
+
+Moments later, you find yourself in a completely different place, a modern city 
+with skyscrapers that seem to touch the sky. The sights and sounds are overwhelming, 
+and you're surrounded by people in a rush.
+
+You check your surroundings, only to realize that you have no memory of how you got here 
+or why you're here. All that lingers is an odd compulsion to learn the programming language Python.
+
+Your adventure at Whodunit Manor is but a distant memory, lost in the recesses of your mind. 
+The secrets and mysteries of the manor remain forever concealed.
+
+
+THE END.
+        """
+
+    )
 
 
 def end_of_game_text():
