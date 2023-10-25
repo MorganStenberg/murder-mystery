@@ -484,7 +484,7 @@ this is no ordinary situation; something far more sinister is at play.
 You have two options:
 
 A. Attempt to rescue the bound figure.
-B. Quietly retreat and continue your investigation elsewhere.
+B. Quietly retreat and call for backup
 
 What will you choose, Detective?
         """
@@ -530,10 +530,195 @@ indelible mark on the annals of Whodunit Manor, even if it remains shrouded in s
     )
 
 def branch_a2_1_2():
-    print("Testing branch a2_1_2")
+    print(
+    """
+You decide to quietly retreat, recognizing the gravity of the situation. 
+This is no ordinary family gathering - it's a clandestine cult, 
+bound by their extreme devotion to something related to.. a snake shaped like a Python.
+
+You navigate the winding halls, careful not to attract attention.
+As you make your way back towards the manor's entrance, you take 
+out your phone and dial the authorities.
+
+With a sense of urgency, you provide them with the location and 
+details of what you found in the basement. Within moments, the 
+sound of approaching sirens fills the air.
+
+As you step outside to meet the authorities, you're met with 
+a squad of determined officers, ready to apprehend the family members. 
+The family's reign of fanaticism comes to an abrupt end.
+
+Each member is taken into custody, their expressions ranging 
+from disbelief to defiant resignation. The truth of Mortimer's 
+murder, entangled with their fanatical devotion, will now be 
+scrutinized by the justice system.
+
+You've brought an end to this dark chapter in Whodunit Manor's 
+history. Your resolve and determination have triumphed over 
+the shadows of fanaticism, and justice will prevail.
+
+As the investigation unfolds, the full extent of the cult's 
+fanaticism is revealed. It turns out, their extreme devotion 
+was centered around the Python programming language, 
+an obsession that ultimately led to Mortimer's demise. 
+
+Your actions have solved the mystery and have preserved the 
+diversity of programming languages for generations to come.
+
+    """)
 
 def branch_a2_2():
-    print("Testing branch a2_2")
+    print(
+    """
+You decide to follow the sound of the voices, your curiosity piqued by the hushed but intense conversation. 
+The voices lead you down a dimly lit corridor, their urgency growing more pronounced.
+
+As you round a corner, you find yourself outside a partially closed door. 
+The voices inside are hushed but tinged with an unmistakable tension.
+
+"You must ensure the detective doesn't discover what's in the basement," 
+one voice says, the tone laced with urgency.
+
+Another voice, slightly muffled, responds, 
+"We've gone to great lengths to keep it hidden. We can't afford any slip-ups now."
+
+A chill runs down your spine as you listen in, the gravity of their conversation sinking in. 
+Whatever is in the basement holds a secret so significant that the 
+family is willing to go to extreme lengths to protect it.
+
+You make a mental note to find a way into the basement, 
+determined to uncover the truth that has been hidden away.
+
+Your options are:
+
+A. Attempt to find an entrance to the basement.
+B. Go back out the main entrance and call for backup.
+
+    """)
+
+def branch_a2_2_1():
+    print(
+        """
+You decide to search for an entrance to the basement. 
+The urgency in the voices you overheard only strengthens your resolve to uncover the truth.
+
+After a few twists and turns through the labyrinthine corridors, 
+you come across a seemingly inconspicuous door. There's a faint draft 
+emanating from beneath, hinting at a hidden passage.
+
+As you descend the narrow staircase, the air grows colder,
+and the echoes of your footsteps reverberate. 
+The flickering light of a lone bulb barely illuminates the space.
+
+Your breath catches in your throat as you take in 
+the sight before you. The basement is adorned with 
+eerie symbols, arranged in the shape of a python snake. 
+It's a startling revelation.
+
+A sense of foreboding washes over you, realizing that 
+there's more to this family and this manor than 
+meets the eye. The secrets held within these walls 
+are darker and more twisted than you could have imagined.
+
+Your eyes scan the dimly lit room, and to your horror, 
+you find a figure bound and gagged, their eyes wide with terror.
+
+A. Attempt to rescue the bound figure.
+B. Quietly retreat and continue your investigation elsewhere.
+
+What will be your next move, Detective?
+
+        """
+    )
+
+def branch_a2_2_2():
+    print(
+        """
+You decide it's wiser to retreat and call for backup. 
+This situation has become far too perilous to handle alone. 
+You quietly make your way back through the dimly lit corridor, 
+your senses on high alert.
+
+Just as you reach the main entrance, a voice behind you startles you. 
+"Leaving so soon, Detective?" It's the butler, his tone dripping with menace.
+
+Turning slowly, you find the imposing figure of the butler blocking 
+your path. He eyes you with a mixture of steely determination 
+and grim satisfaction.
+
+You have two options:
+
+A. Attempt to reason with the butler, explaining the gravity of 
+   the situation and your need for assistance.
+B. Prepare for a confrontation. Try to force your way past the butler.
+
+What will be your next move, Detective?
+
+        """
+    )
+
+def branch_a2_2_2_1():
+    print(
+        """
+You decide to attempt to reason with the butler, 
+hoping he'll understand the gravity of the situation. 
+
+"Listen, I need to call for backup. There's something going on 
+in this manor that's far beyond my capabilities to handle alone. 
+Lives may be in danger."
+
+As you speak, you see a flicker of consideration in the 
+butler's eyes. Perhaps he's weighing the options, you think. 
+But just as you start to feel a glimmer of hope, everything goes dark.
+
+A sudden, searing pain explodes in your head, and then... nothing.
+
+When you awaken, your surroundings are unfamiliar. 
+You're in the basement, tied to a chair. The dim light casts 
+eerie shadows on the walls, illuminating strange snake like symbols etched 
+into the stone. The air is heavy with an oppressive stillness.
+
+It's clear now that this family is entangled in something 
+far more sinister than you could have imagined. 
+The cult-like atmosphere in the basement speaks volumes.
+
+The secrets of Whodunit Manor, and the extent of their devotion to... whatever this is, 
+remain shrouded in darkness.
+
+        """
+    )
+
+def branch_a2_2_2_2():
+    print(
+        """
+You steel yourself, preparing for a confrontation with the butler. 
+Despite his imposing presence, you manage to outmaneuver him with a swift, 
+calculated move. The butler, older and perhaps slower than he once was, 
+is taken by surprise.
+
+Your decisive strike lands, and the butler stumbles back, 
+a look of shock and pain contorting his face. It's clear that he's been injured.
+
+However, before you can react further, the commotion draws 
+the attention of the family members. They rush in, their 
+faces a mix of astonishment and outrage at the sight of their butler being attacked.
+
+"You dare to harm one of us?" Lady Genevieve's voice drips with venom. 
+"You will pay dearly for this."
+
+With the family united against you, there is no chance of escape. 
+They quickly subdue you, their combined strength too much for 
+you to resist. The room is charged with tension and anger.
+
+As you're restrained, wrists bound tightly, Lady Genevieve 
+turns to one of the family members. "Call the authorities. 
+This intruder will face the full extent of the law."
+
+In a short while, the police arrive and take you into custody. 
+The truth of Mortimer's demise, along with any other mysteries 
+the manor holds, will remain forever shrouded.
+        """
+    )
 
 
 def branch_b():
