@@ -441,25 +441,99 @@ How would you like to proceed, Detective?
 
 
 def branch_a2():
-    print("Testing branch a2")
+    print(
+    """
+Politely decline and explore the manor on your own.
+
+You thank the butler for his offer but decide to take matters into your own hands. 
+The manor is vast, and you're eager to uncover any hidden secrets it may hold.
+
+As you venture further into the manor, you find yourself in a dimly lit corridor, 
+lined with paintings of somber-faced ancestors. The air feels cooler here, and a faint 
+echo of distant voices reaches your ears.
+
+You have two options:
+
+    A. Make your way to the basement, drawn by a strange and eerie sensation.
+    B. Follow the sound of the voices.
+
+What will you choose?
+
+    """)
 
 def branch_a2_1():
-    print("Testing branch a2_1")
+    print(
+        """
+Make your way to the basement, drawn by a strange and eerie sensation.
+
+You follow an inexplicable pull, leading you deeper into the manor. 
+The corridor seems to stretch endlessly, the air growing colder with each step. 
+Finally, you arrive at a sturdy wooden door, slightly ajar.
+
+As you push it open, a wave of cold air washes over you, carrying with it a scent 
+of damp earth and something else, something... unnatural. The room beyond is 
+illuminated by a flickering light, revealing an unexpected sight.
+
+Before you stands a makeshift altar, adorned with candles and strange symbols, 
+all arranged in the shape of a python snake. Against the far wall, you spot a 
+figure bound and gagged, their eyes wide with terror.
+
+You watch in stunned silence, hidden in the shadows. It's clear that 
+this is no ordinary situation; something far more sinister is at play.
+
+You have two options:
+
+A. Attempt to rescue the bound figure.
+B. Quietly retreat and continue your investigation elsewhere.
+
+What will you choose, Detective?
+        """
+    )
 
 def branch_a2_1_1():
-    print("Testing branch a2_1_1")
+    print(
+        """
+You step into the room, determined to free the captive. 
+With swift motions, you untie the knots, and the figure's gratitude is palpable.
+
+Before you can exchange a word, a sudden, 
+sharp blow to the back of your head sends shockwaves of pain 
+radiating through your skull. Darkness engulfs you.
+
+When you come to, you're bound to a chair. The room is dimly lit, 
+shadows dancing on the walls. Before you, the family members stand 
+in a semi-circle, their faces a mix of satisfaction and solemnity.
+
+Lady Genevieve steps forward, her voice carrying purpose. 
+
+"We have a mission - to preserve Python's sanctity. 
+Mortimer strayed, delving into JavaScript. We couldn't allow that."
+
+You realize the depth of their fanaticism, 
+willing to commit murder to protect their chosen language.
+
+The gravity of the situation settles over you. 
+You're an unwitting intruder in their midst.
+
+As the minutes pass, their fervent discourse on Python's 
+virtues washes over you, a relentless tide of fanaticism. 
+In their eyes, diversity in programming languages holds little sway.
+
+Time loses meaning, and the realisation that you will never
+leave this chamber slowly hits you. You try to plead for your release to no avail.
+
+In this shadowy realm, the fervor for Python eclipses all else. 
+Your attempt to navigate this treacherous path will leave an 
+indelible mark on the annals of Whodunit Manor, even if it remains shrouded in secrecy.
+
+        """
+    )
 
 def branch_a2_1_2():
     print("Testing branch a2_1_2")
 
 def branch_a2_2():
     print("Testing branch a2_2")
-
-def branch_a2_2_1():
-    print("Testing branch a2_2_1")
-
-def branch_a2_2_2():
-    print("Testing branch a2_2_2")
 
 
 def branch_b():
@@ -482,7 +556,7 @@ map_of_functions = {
     'aaa': branch_a1_1,
     'aab': branch_a1_2,
     'aaba': branch_a1_2_1,
-    'aaab': branch_a1_1_2,
+    'aaab': branch_a1_1_2, #does not work, need to refactor decision code to handle shorter branches
     'aaaa': branch_a1_1_1,
     'aabb': branch_a1_2_2, #leads to the same ending as the other option
     'aabba': branch_a1_2_1_1, 
