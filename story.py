@@ -397,12 +397,6 @@ The detective's attempt at restoring order takes an unexpected turn, leading to 
         """
     )
 
-def branch_a1_2_1_1_2():
-    print(
-        """
-
-        """
-    )
 
 def branch_a1_2_2():
     print(
@@ -486,7 +480,15 @@ map_of_functions = {
     'a': branch_a,
     'aa': branch_a1,
     'aaa': branch_a1_1,
+    'aab': branch_a1_2,
+    'aaba': branch_a1_2_1,
+    'aaab': branch_a1_1_2,
     'aaaa': branch_a1_1_1,
+    'aabb': branch_a1_2_2, #leads to the same ending as the other option
+    'aabba': branch_a1_2_1_1, 
+    'aabbb': branch_a1_2_1_2,
+    'aabaa': branch_a1_2_1_1,
+    'aabab': branch_a1_2_1_2,
     'aaaaa': branch_a1_1_1_1,
     'aaaab': branch_a1_1_1_2,
 }
