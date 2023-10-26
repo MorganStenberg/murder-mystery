@@ -13,6 +13,23 @@ This file is imported in to the run.py file.
 
 
 INTRODUCTION_TEXT = """
+
+
+'                ____    ____                        __                
+'               |_   \  /   _|                      |  ]               
+'                 |   \/   |  __   _   _ .--.   .--.|  | .---.  _ .--.  
+'                 | |\  /| | [  | | | [ `/'`\]/ /'`\ ' |/ /__\ \[ `/'`\] 
+'                _| |_\/_| |_ | \_/ |, | |    | \__/  || \__., | |     
+'               |_____||_____|'.__.'_/[___]    '.__.;__]'.__.'[___]    
+'   ____    ____                  _                                    
+'  |_   \  /   _|                / |_                                  
+'    |   \/   |    _   __  .--. `| |-'.---.  _ .--.  _   __            
+'    | |\  /| |   [ \ [  ]( (`\] | | / /__\ \ [ `/'`\][ \ [  ]           
+'   _| |_\/_| |_   \ '/ /  `'.'. | |,| \__.,  | |     \ '/ /            
+'  |_____||_____|[\_:  /  [\__) )\__/ '.__.'  [___]  [\_:  /             
+'                 \__.'                             \__.'              
+
+
 Welcome, Detective Extraordinaire, to the grandest caper of them all - 'Murder Mystery'! 
 
 Prepare to embark on a whirlwind adventure filled with more twists and turns than a contortionist on a rollercoaster.
@@ -193,7 +210,21 @@ The story comes to a sudden, tragic end. Your pursuit of the truth met an untime
 demise in the heart of Whodunit Manor. The secrets of the manor, along with 
 the identity of Mortimer's killer, remain locked away forever.
 
-THE END.
+
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
         """
     )
     
@@ -231,7 +262,21 @@ of the truth ends in a sudden and violent demise.
 The secrets of Whodunit Manor remain buried, 
 and the identity of Mortimer's killer remains a mystery.
 
-THE END.
+
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
         """
     )
 
@@ -272,7 +317,21 @@ The truth of Mortimer's demise, along with the answers you sought, remain locked
 The detective's pursuit of the truth takes an unforeseen turn, culminating in a deadly encounter. 
 The enigma of Whodunit Manor remains unsolved.
 
-THE END.
+
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
 
     """)
 
@@ -371,7 +430,21 @@ The detective's pursuit of the truth ends in a chilling and untimely demise.
 The secrets of Whodunit Manor, particularly the sinister activities in the basement, 
 remain forever shrouded in mystery.
 
-THE END.
+
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
 
         """
     )
@@ -407,7 +480,21 @@ leading to the family losing confidence in your ability to solve the case.
 With the decision made to seek the assistance of another detective, 
 you make your exit from Whodunit Manor.
 
-THE END.
+
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
         """
     )
 
@@ -540,7 +627,21 @@ In this shadowy realm, the fervor for Python eclipses all else.
 Your attempt to navigate this treacherous path will leave an 
 indelible mark on the annals of Whodunit Manor, even if it remains shrouded in secrecy.
 
-THE END.
+
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
 
         """
     )
@@ -581,7 +682,21 @@ an obsession that ultimately led to Mortimer's demise.
 Your actions have solved the mystery and have preserved the 
 diversity of programming languages for generations to come.
 
-THE END.
+
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
 
     """)
 
@@ -703,7 +818,21 @@ The cult-like atmosphere in the basement speaks volumes.
 The secrets of Whodunit Manor, and the extent of their devotion to... whatever this is, 
 remain shrouded in darkness.
 
-THE END.
+
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
 
         """
     )
@@ -738,7 +867,21 @@ In a short while, the police arrive and take you into custody.
 The truth of Mortimer's demise, along with any other mysteries 
 the manor holds, will remain forever shrouded.
 
-THE END.
+
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
         """
     )
 
@@ -834,7 +977,21 @@ You watch from a distance, satisfied that your quick thinking and bravery led to
 the unraveling of this bizarre case. With the manor now secured, you make your 
 exit, knowing that you've once again proven yourself as a true Detective Extraordinaire.
 
-    THE END.
+ 
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
         """
     )
 
@@ -869,7 +1026,21 @@ The cult-like atmosphere in the basement speaks volumes.
 The secrets of Whodunit Manor, and the extent of their devotion to... whatever this is,
 remain shrouded in darkness.
 
-THE END.
+
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
 
         """
     )
@@ -949,7 +1120,21 @@ hiss of the serpent before darkness claims you.
 Your investigation at Whodunit Manor ends here. The secrets of Whodunit Manor, 
 and the extent of their devotion to... whatever this is, remain shrouded in darkness.
 
-        THE END.
+
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
         """
     )
 
@@ -982,7 +1167,20 @@ Your adventure at Whodunit Manor is but a distant memory, lost in the recesses o
 The secrets and mysteries of the manor remain forever concealed.
 
 
-THE END.
+'   _________  ____  ____  ________   
+'  |  _   _  ||_   ||   _||_   __  |  
+'  |_/ | | \_|  | |__| |    | |_ \_|  
+'      | |      |  __  |    |  _| _   
+'     _| |_    _| |  | |_  _| |__/ |  
+'    |_____|  |____||____||________|  
+'   ________  ____  _____  ______     
+'  |_   __  ||_   \|_   _||_   _ `.   
+'    | |_ \_|  |   \ | |    | | `. \  
+'    |  _| _   | |\ \| |    | |  | |  
+'   _| |__/ | _| |_\   |_  _| |_.' /  
+'  |________||_____|\____||______.'   
+'                                     
+
         """
 
     )
