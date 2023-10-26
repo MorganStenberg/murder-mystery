@@ -762,8 +762,8 @@ You can't shake the feeling that there's something significant behind it.
 
 You have two options: 
 
-A. Open the door and see what lies beyond. 
-B. Continue exploring the house.
+A. Continue exploring the house.
+B. Open the door and see what lies beyond.
 
         """
     )

@@ -99,12 +99,12 @@ def make_choice():
     decisions = None
    
     while True:
-        available_paths = [key for key in story.map_of_functions.keys() if len(key) == (len(list_of_decision)+1)]
+        available_paths = [key for key in story.map_of_functions.keys() if key.startswith(''.join(list_of_decision))]
         print(f"available paths here: {available_paths}")
 
-        if available_paths > list_of_decision:
+        if len(available_paths) >= len(list_of_decision):
             decisions = input("Enter choice \n").lower()
-            if decisions in {"a", "b"}:
+            if decisions in {"a","b"}:
                 list_of_decision.append(decisions)
                 function_call = ''.join(list_of_decision)
                 if function_call in story.map_of_functions:
@@ -114,7 +114,7 @@ def make_choice():
                     print(f"list of decisions here:{list_of_decision}")
             else:
                 print("Invalid choice, please input A or B")
-        elif available_paths < list_of_decision:
+        elif len(available_paths) < len(list_of_decision):
             end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
             if end_or_restart == "y":
                     clear_screen()
