@@ -877,6 +877,81 @@ THE END.
 
 
 def branch_b1_2():
+    print(
+        """
+You steel yourself and cautiously descend the stairs into the basement. 
+
+As you reach the bottom, a chill washes over you. The room is filled with an eerie 
+stillness, broken only by the faint flickering lights that cast long, dancing 
+shadows on the walls.
+
+Your eyes scan the surroundings, and you notice strange markings etched into the 
+walls, their meaning eluding you. It's clear that this basement holds secrets 
+that defy easy explanation.
+
+In the corner of the room, you spot another set of stairs, 
+seemingly there are multiple ways to descend to the basement. 
+
+As you take a step further, you notice a sturdy wooden door, slightly ajar, 
+catching your attention. It emanates an aura of mystery.
+
+What will you do?
+
+    A. Explore the room behind the sturdy wooden door.
+    B. Explore the basement further 
+
+        """
+    )
+
+def branch_b1_2_1():
+    print(
+        """
+As you push the door open, a wave of cold air washes over you, carrying with it a scent 
+of damp earth and something else, something... unnatural. The room beyond is 
+illuminated by a flickering light, revealing an unexpected sight.
+
+Before you stands a makeshift altar, adorned with candles and strange symbols, 
+all arranged in the shape of a python snake. Against the far wall, you spot a 
+figure bound and gagged, their eyes wide with terror.
+
+You watch in stunned silence, hidden in the shadows. It's clear that 
+this is no ordinary situation; something far more sinister is at play.
+
+You have two options:
+
+A. Attempt to rescue the bound figure.
+B. Quietly retreat and call for backup
+
+        """
+    )
+
+def branch_b1_2_2():
+    print(
+        """
+You decide to explore the basement further. 
+
+The air grows heavier, the shadows 
+deeper, as you move deeper into the heart of the manor's secrets. 
+
+After what feels like an eternity, you stumble upon another door, this one even 
+more foreboding than the last. It groans as you push it open, revealing a room 
+that chills you to the bone.
+
+Dim light filters in, casting eerie shapes across the floor. Your breath catches 
+as you spot it - a colossal python, coiled and poised, its unblinking eyes fixed 
+on you. The room seems almost tailor-made for the creature, with strange symbols 
+etched into the walls.
+
+Panic surges through you, but it's too late. With lightning speed, the python 
+strikes, its powerful coils wrapping around you. The last thing you hear is the 
+hiss of the serpent before darkness claims you.
+
+Your investigation at Whodunit Manor ends here. The secrets of Whodunit Manor, 
+and the extent of their devotion to... whatever this is, remain shrouded in darkness.
+
+        THE END.
+        """
+    )
 
 
 def branch_b2():
@@ -925,11 +1000,34 @@ map_of_functions = {
     'aaba': branch_a1_2_1,
     'aaab': branch_a1_1_2, #does not work, need to refactor decision code to handle shorter branches
     'aaaa': branch_a1_1_1,
-    'aabb': branch_a1_2_2, #leads to the same ending as the other option
+    'aabb': branch_a1_2_2, #leads to the same ending as branch_a1_2_1
     'aabba': branch_a1_2_1_1, 
     'aabbb': branch_a1_2_1_2,
     'aabaa': branch_a1_2_1_1,
     'aabab': branch_a1_2_1_2,
     'aaaaa': branch_a1_1_1_1,
     'aaaab': branch_a1_1_1_2,
+    'ab': branch_a2,
+    'aba': branch_a2_1,
+    'abaa': branch_a2_1_1,
+    'abab': branch_a2_1_2,
+    'abb': branch_a2_2,
+    'abba': branch_a2_2_1, #leads to the same ending as branch_a2_1_1 and a2_1_2
+    'abbaa': branch_a2_1_1, 
+    'abbab': branch_a2_1_2,
+    'abbb': branch_a2_2_2,
+    'abbba': branch_a2_2_2_1,
+    'abbbb': branch_a2_2_2_2,
+    'b': branch_b,
+    'ba': branch_b1,
+    'baa': branch_b1_1,
+    'baaa': branch_b1_1_1,
+    'baab': branch_b1_1_2,
+    'bab': branch_b1_2,
+    'baba': branch_b1_2_1, #leads to the same ending as branch_a2_1_1 and a2_1_2
+    'babaa': branch_a2_1_1,
+    'babab': branch_a2_1_2,
+    'babb': branch_b1_2_2,
+    'bb': branch_b2,
+
 }
