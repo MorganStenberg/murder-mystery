@@ -1187,7 +1187,25 @@ The secrets and mysteries of the manor remain forever concealed.
 
 
 def end_of_game_text():
-    print("testing end of game text")
+    print(
+        """
+Thank you for joining us in the mysterious world of Whodunit Manor. Your detective skills were truly extraordinary!
+
+If you ever wish to return and unravel more mysteries, the manor's gates will always be open for you.
+
+Farewell, and may your adventures continue in the realm of the unknown.
+
+
+'     ______                          __  __                          _  
+'   .' ___  |                        |  ][  |                        | | 
+'  / .'   \_|   .--.    .--.    .--. |  |  | |.--.   _   __  .---.   | | 
+'  | |   ____ / .'`\ \/ .'`\ \/ /'`\ '  |  | '/'`\ \[ \ [  ]/ /__\ \ | | 
+'  \ `.___]  || \__. || \__. || \__/    |  |  \__/ | \ '/ / | \__. , |_| 
+'   `._____.'  '.__.'  '.__.'  '.__.; __][__;.__.'[\_:   /   '.__.'  (_) 
+'                                                  \ __ .'              
+
+        """
+    )
 
 #Dictionary mapping relevant branches to user choices, to be used by make_choice function.
 map_of_functions = {

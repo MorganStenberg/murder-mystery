@@ -25,8 +25,8 @@ def start_game_get_username():
     """
     Starts the game by asking the user for a username
     """
-    print("Please select your detective name..")
-    username = input("Enter your name here: \n")
+    print("Please select your detective name..\n")
+    username = input("Enter your name below: \n")
     validate_username(username)
   
 
@@ -53,7 +53,7 @@ def validate_username(username):
         valid = False
        
     if valid:
-        print(f"Welcome detective {username}")
+        print(f"\nWelcome detective.. {username}\n")
         initialize_game()
 
     if valid is False:
