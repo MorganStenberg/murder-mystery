@@ -6,7 +6,7 @@ import platform
 import time #To delay printing of text for user
 
 # Define global variables for decisions by the user
-list_of_decision = []
+list_of_decisions = []
 decisions = None
 
 
@@ -73,7 +73,7 @@ def initialize_game():
             clear_screen()
             time.sleep(1)
             story.welcome()
-            make_choice()
+            user_choices()
             break
         elif initialize_game == "q":
             clear_screen()
@@ -85,7 +85,7 @@ def initialize_game():
 
 
 
-def make_choice():
+def user_choices():
     """
     Handles the main logic for the game and all the user choices. 
     Traverses through the different branches depending on the user input. 
@@ -93,22 +93,20 @@ def make_choice():
     Sets global variables needed for game. 
     """
     global decisions
-    global list_of_decision
+    global list_of_decisions
 
-    list_of_decision = []
+    list_of_decisions = []
     decisions = None
    
     while True:
-        decisions = input("Enter choice \n").lower()
+        decisions = input("Enter your choice here: \n").lower()
         if decisions in {"a","b"}:
-            list_of_decision.append(decisions)
-            function_call = ''.join(list_of_decision)  
+            list_of_decisions.append(decisions)
+            function_call = ''.join(list_of_decisions)  
             if function_call in story.map_of_functions:
                 clear_screen()
                 time.sleep(0.5)
                 story.map_of_functions[function_call]()
-                print(f"list of decisions here:{list_of_decision}")
-                print(function_call)
         else:
                 print("Invalid choice, please input A or B")
 
@@ -117,7 +115,7 @@ def make_choice():
             if end_or_restart == "y":
                     clear_screen()
                     story.welcome()
-                    make_choice()
+                    user_choices()
                     break
             elif end_or_restart == "n":
                     clear_screen()

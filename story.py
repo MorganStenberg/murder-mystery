@@ -991,14 +991,14 @@ THE END.
 def end_of_game_text():
     print("testing end of game text")
 
-#testing putting functions in dictionary for refactoring decision function
+#Dictionary mapping relevant branches to user choices, to be used by make_choice function.
 map_of_functions = {
     'a': branch_a,
     'aa': branch_a1,
     'aaa': branch_a1_1,
     'aab': branch_a1_2,
     'aaba': branch_a1_2_1,
-    'aaab': branch_a1_1_2, #does not work, need to refactor decision code to handle shorter branches
+    'aaab': branch_a1_1_2,
     'aaaa': branch_a1_1_1,
     'aabb': branch_a1_2_2, #leads to the same ending as branch_a1_2_1
     'aabba': branch_a1_2_1_1, 
