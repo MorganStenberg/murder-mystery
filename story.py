@@ -1,10 +1,10 @@
-
-
 """ 
 This file contains the story for the game. 
 The introduction text is declared as a variable.
 The different branches of the story are defined as different functions 
-which will be called depending on the choices by the user
+
+The functions are also mapped to keys in a dictionary, which is used 
+to call the correct function based on the user input.
 
 This file is imported in to the run.py file. 
 
@@ -67,9 +67,11 @@ def branch_a():
         """
     Enter through the front doors of the manor
 
-You stride confidently up to the massive oak doors and give them a firm push. They creak open to reveal a grand foyer adorned with portraits of stern-faced ancestors and glittering chandeliers.
+You stride confidently up to the massive oak doors and give them a firm push. They creak open 
+to reveal a grand foyer adorned with portraits of stern-faced ancestors and glittering chandeliers.
 
-As you step inside, a butler, impeccably dressed, approaches with a polite bow. "Good evening, Detective. The family is in the drawing room. May I show you the way?"
+As you step inside, a butler, impeccably dressed, approaches with a polite bow. 
+"Good evening, Detective. The family is in the drawing room. May I show you the way?"
 
 You have two options:
 
@@ -91,11 +93,14 @@ You decide to accept the butler's offer. He leads you through a series of ornate
 each more opulent than the last, until you reach a set of double doors. With a flourish, the butler announces your arrival, 
 "Ladies and gentlemen, a detective has graced us with their presence."
 
-The room is filled with an assortment of characters. There's the aloof matriarch, Lady Genevieve, the boisterous Uncle Reginald, the enigmatic cousin Eliza, and the withdrawn niece, Miss Penelope.
+The room is filled with an assortment of characters. There's the aloof matriarch, Lady Genevieve, 
+the boisterous Uncle Reginald, the enigmatic cousin Eliza, and the withdrawn niece, Miss Penelope.
 
-Lady Genevieve, her gaze piercing, steps forward, "Detective, you're here to solve the unfortunate incident regarding my late brother Mortimer, aren't you?"
+Lady Genevieve, her gaze piercing, steps forward, "Detective, you're here to solve the unfortunate 
+incident regarding my late brother Mortimer, aren't you?"
 
-As she speaks, you notice a flicker of something in her eyes - a mix of sorrow and perhaps something else, something harder to place.
+As she speaks, you notice a flicker of something in her eyes - a mix of sorrow and perhaps 
+something else, something harder to place.
 
 You have two options:
 
@@ -703,8 +708,9 @@ diversity of programming languages for generations to come.
 def branch_a2_2():
     print(
     """
-You decide to follow the sound of the voices, your curiosity piqued by the hushed but intense conversation. 
-The voices lead you down a dimly lit corridor, their urgency growing more pronounced.
+You decide to follow the sound of the voices, your curiosity piqued by the 
+hushed but intense conversation. The voices lead you down a dimly lit 
+corridor, their urgency growing more pronounced.
 
 As you round a corner, you find yourself outside a partially closed door. 
 The voices inside are hushed but tinged with an unmistakable tension.
@@ -733,7 +739,8 @@ def branch_a2_2_1():
     print(
         """
 You decide to search for an entrance to the basement. 
-The urgency in the voices you overheard only strengthens your resolve to uncover the truth.
+The urgency in the voices you overheard only strengthens 
+your resolve to uncover the truth.
 
 After a few twists and turns through the labyrinthine corridors, 
 you come across a seemingly inconspicuous door. There's a faint draft 
@@ -916,9 +923,12 @@ def branch_b1():
         """
 You decide to continue exploring the house. 
 
-You meander through dimly lit hallways, tracing your fingers along the elaborate wallpaper that seems to whisper ancient secrets. 
+You meander through dimly lit hallways, tracing your fingers 
+along the elaborate wallpaper that seems to whisper ancient secrets. 
 
-The air grows colder as you find a door that seems to lead to a basement, you creek it open silently and look down, there seems to be some flickering lights down there. 
+The air grows colder as you find a door that seems to lead to a 
+basement, you creek it open silently and look down, there seems 
+to be some flickering lights down there. 
 
 At the same time you hear steps approaching.. 
 
@@ -1041,7 +1051,6 @@ remain shrouded in darkness.
 '  |________||_____|\____||______.'   
 '                                     
 
-
         """
     )
 
@@ -1077,7 +1086,7 @@ What will you do?
 def branch_b1_2_1():
     print(
         """
-As you push the door open, a wave of cold air washes over you, carrying with it a scent 
+As you push the wooden door open, a wave of cold air washes over you, carrying with it a scent 
 of damp earth and something else, something... unnatural. The room beyond is 
 illuminated by a flickering light, revealing an unexpected sight.
 
@@ -1142,7 +1151,7 @@ and the extent of their devotion to... whatever this is, remain shrouded in dark
 def branch_b2():
     print(
         """
-    Open the door and see what lies beyond.
+Open the door and see what lies beyond.
 
 You can't resist the urge to uncover the mystery behind this hidden door. 
 
@@ -1245,5 +1254,4 @@ map_of_functions = {
     'babab': branch_a2_1_2,
     'babb': branch_b1_2_2,
     'bb': branch_b2,
-
 }

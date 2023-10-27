@@ -3,7 +3,7 @@ import story
 import end_of_game
 import os
 import platform
-import time #To delay printing of text for user
+import time
 import gspread
 from google.oauth2.service_account import Credentials
 
@@ -54,7 +54,6 @@ def validate_username(username):
     that it is atleast 2 characters and no longer than 10 characters. 
     """
     valid = True
-
     try:
         if len(username) == 0:
             raise ValueError(
@@ -69,11 +68,10 @@ def validate_username(username):
     except ValueError as e:
         print(f"Invalid data: {e}, please try again")
         valid = False
-       
+
     if valid:
         print(f"\nWelcome detective.. {username}\n")
         initialize_game()
-
     if valid is False:
         start_game_get_username()
     
@@ -83,10 +81,8 @@ def initialize_game():
     Asks the user to start the game via pressing Y
     Calls correct functions to start game
     """
-
     while True:
-        print("Press Y to start game. Q to quit the game\n")
-        initialize_game = input().lower()
+        initialize_game = input("Press Y to start game. Q to quit the game\n").lower()
         if initialize_game == "y":
             clear_screen()
             time.sleep(1)
