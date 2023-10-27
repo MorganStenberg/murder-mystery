@@ -178,7 +178,7 @@ def main():
     Starts the game by printing introduction text and then calling function to start
     game via asking the user for username.
     """
-    introduction_text()
+    story.introduction_text()
     username = start_game_get_username()
 
 if __name__ == "__main__":

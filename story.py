@@ -12,7 +12,8 @@ This file is imported in to the run.py file.
 
 
 
-def introduction_text(): = print("""
+def introduction_text():
+    print("""
 
 
 '                ____    ____                        __                
