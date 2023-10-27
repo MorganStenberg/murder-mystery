@@ -12,7 +12,7 @@ This file is imported in to the run.py file.
 
 
 
-INTRODUCTION_TEXT = """
+def introduction_text(): = print("""
 
 
 '                ____    ____                        __                
@@ -43,7 +43,7 @@ But do remember that sometimes the path to the truth is not as straightforward
 as you might think.. 
 
 Do you think you have what it takes to uncover the secrets of Whodunit Manor? 
-"""
+""")
     
 
 def welcome():
