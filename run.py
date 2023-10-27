@@ -20,14 +20,12 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('murder_mystery')
 
 user_path = SHEET.worksheet('userpath')
-data = user_path.get_all_values()
-print(data)
 
 
 # Define global variables for decisions by the user
 list_of_decisions = []
 decisions = None
-
+username = ''
 
 def clear_screen():
     """
@@ -44,6 +42,7 @@ def start_game_get_username():
     """
     Starts the game by asking the user for a username
     """
+    global username
     print("Please select your detective name..\n")
     username = input("Enter your name below: \n")
     validate_username(username)
@@ -113,6 +112,7 @@ def user_choices():
     """
     global decisions
     global list_of_decisions
+    global username
 
     list_of_decisions = []
     decisions = None
@@ -130,6 +130,7 @@ def user_choices():
                 print("Invalid choice, please input A or B")
 
         if (function_call + "a") not in story.map_of_functions or (function_call + "b") not in story.map_of_functions:
+            update_worksheet(username, function_call)
             end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
             if end_or_restart == "y":
                     clear_screen()
@@ -145,6 +146,22 @@ def user_choices():
 
 
 
+def retrieve_player_number():
+    """
+    Gets the number of players that has played the game from the google sheet by counting 
+    the total number of rows and subtracting for the header, and stores that in a variable 
+    """
+    number_of_rows = len(user_path.get_all_values())
+    return number_of_rows - 1 
+    
+    
+def update_worksheet(username, function_call):
+    """
+    Updates google sheet with username and the users chosen path in the game
+    """
+    player_count = retrieve_player_number()
+    user_path.append_row([username, function_call, player_count + 1])
+
 
 
 def main():
@@ -155,6 +172,7 @@ def main():
     print(story.INTRODUCTION_TEXT)
     username = start_game_get_username()
 
-#if __name__ == "__main__":
-    #main()
+if __name__ == "__main__":
+    main()
+
 
