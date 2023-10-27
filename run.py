@@ -132,18 +132,21 @@ def user_choices():
         if (selected_path + "a") not in story.map_of_functions or (selected_path + "b") not in story.map_of_functions:
             update_worksheet(username, selected_path)
             compare_selected_paths(selected_path)
-            end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
-            if end_or_restart == "y":
+            print(f"And you are the {retrieve_player_number()} player to play the game! \n")
+            while True: 
+                end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
+                if end_or_restart == "y":
                     clear_screen()
                     story.welcome()
                     user_choices()
                     break
-            elif end_or_restart == "n":
+                elif end_or_restart == "n":
                     clear_screen()
                     story.end_of_game_text()
-                    break
-            else:
-                print("Invalid choice, please input Y or N")
+                    return
+                else:
+                    print("Invalid choice, please input Y or N")
+
 
 
 
