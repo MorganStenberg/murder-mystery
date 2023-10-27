@@ -121,16 +121,17 @@ def user_choices():
         decisions = input("Enter your choice here: \n").lower()
         if decisions in {"a","b"}:
             list_of_decisions.append(decisions)
-            function_call = ''.join(list_of_decisions)  
-            if function_call in story.map_of_functions:
+            selected_path = ''.join(list_of_decisions)  
+            if selected_path in story.map_of_functions:
                 clear_screen()
                 time.sleep(0.5)
-                story.map_of_functions[function_call]()
+                story.map_of_functions[selected_path]()
         else:
                 print("Invalid choice, please input A or B")
 
-        if (function_call + "a") not in story.map_of_functions or (function_call + "b") not in story.map_of_functions:
-            update_worksheet(username, function_call)
+        if (selected_path + "a") not in story.map_of_functions or (selected_path + "b") not in story.map_of_functions:
+            update_worksheet(username, selected_path)
+            compare_selected_paths(selected_path)
             end_or_restart = input("Do you want to play again? Y for yes N for no\n").lower()
             if end_or_restart == "y":
                     clear_screen()
@@ -149,19 +150,28 @@ def user_choices():
 def retrieve_player_number():
     """
     Gets the number of players that has played the game from the google sheet by counting 
-    the total number of rows and subtracting for the header, and stores that in a variable 
+    the total number of rows and subtracting for the header 
     """
     number_of_rows = len(user_path.get_all_values())
     return number_of_rows - 1 
     
     
-def update_worksheet(username, function_call):
+def update_worksheet(username, selected_path):
     """
-    Updates google sheet with username and the users chosen path in the game
+    Updates google sheet with username and the users chosen path in the game, 
+    aswell as the player number for the user
     """
     player_count = retrieve_player_number()
-    user_path.append_row([username, function_call, player_count + 1])
+    user_path.append_row([username, selected_path, player_count + 1])
 
+def compare_selected_paths(selected_path):
+    """
+    Compares the current path chosen by the user with previous paths taken by other users. 
+    And tells the user how many, if any, has chosen their specific path before them
+    """
+    player_path = user_path.col_values(2)[1:]
+    comparing_paths = player_path.count(selected_path)
+    print(f"You have reached the end of the game. You are the {comparing_paths} player that has chosen this path: {selected_path}")
 
 
 def main():
