@@ -1,6 +1,5 @@
 
 import story
-import end_of_game
 import os
 import platform
 import time

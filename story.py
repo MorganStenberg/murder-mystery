@@ -46,7 +46,7 @@ as you might think..
 
 Do you think you have what it takes to uncover the secrets of Whodunit Manor?
         """
-        )
+    )
 
 
 def welcome():
@@ -762,9 +762,10 @@ The voices inside are hushed but tinged with an unmistakable tension.
 one voice says, the tone laced with urgency.
 
 Another voice, slightly muffled, responds,
-"We've gone to great lengths to keep it hidden. We can't afford any slip-ups now."
+"We've gone to great lengths to keep it hidden. 
+We can't afford any slip-ups now."
 
-A chill runs down your spine as you listen in, the gravity of their conversation
+A chill runs down your spine as you listen, the gravity of their conversation
 sinking in. Whatever is in the basement holds a secret so significant that the
 family is willing to go to extreme lengths to protect it.
 
