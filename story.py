@@ -1256,6 +1256,7 @@ Farewell, and may your adventures continue in the realm of the unknown.
         """
     )
 
+
 # Dictionary mapping relevant branches to user choices,
 # to be used by make_choice function.
 map_of_functions = {
@@ -1278,7 +1279,7 @@ map_of_functions = {
     'abaa': branch_a2_1_1,
     'abab': branch_a2_1_2,
     'abb': branch_a2_2,
-    'abba': branch_a2_2_1,  # Leads to the same ending as branch_a2_1_1 & a2_1_2
+    'abba': branch_a2_2_1,  # Leads to the same ending as branch_a2_1_1, a2_1_2
     'abbaa': branch_a2_1_1,
     'abbab': branch_a2_1_2,
     'abbb': branch_a2_2_2,
@@ -1290,7 +1291,7 @@ map_of_functions = {
     'baaa': branch_b1_1_1,
     'baab': branch_b1_1_2,
     'bab': branch_b1_2,
-    'baba': branch_b1_2_1,  # Leads to the same ending as branch_a2_1_1 & a2_1_2
+    'baba': branch_b1_2_1,  # Leads to the same ending as branch_a2_1_1, a2_1_2
     'babaa': branch_a2_1_1,
     'babab': branch_a2_1_2,
     'babb': branch_b1_2_2,
