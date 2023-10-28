@@ -33,6 +33,8 @@ def introduction_text():
 
 Welcome, Detective Extraordinaire, to 'Murder Mystery'! 
 
+--------------------------------------------------------------------------------
+
 Prepare to embark on a whirlwind adventure filled with more twists and turns 
 than a contortionist on a rollercoaster.
 
@@ -75,7 +77,7 @@ What will you choose?
 def branch_a():
     print(
         """
-    Enter through the front doors of the manor
+Enter through the front doors of the manor
 
 You stride confidently up to the massive oak doors and give them a firm push. 
 They creak open to reveal a grand foyer adorned with portraits of stern-faced 
@@ -135,18 +137,19 @@ What will be your next move, Detective?
 def branch_a1_1():
     print(
         """
-You decide to start with a bold statement, hoping to shake loose 
-any hidden secrets. The room falls momentarily silent, interrupted 
-only by the crackling of the fireplace.
+You decide to start with a bold statement.
+
+Hoping to shake loose any hidden secrets. The room falls momentarily silent, 
+interrupted only by the crackling of the fireplace.
 
 Uncle Reginald, his face turning a shade of crimson, sputters, 
 "This is preposterous! How dare you imply such things?"
 
 Cousin Eliza raises an eyebrow, her expression cool and collected. 
-"Detective, your approach is rather... direct."
-Miss Penelope, always quiet, shifts uncomfortably.
+"Detective, your approach is rather... direct." Miss Penelope, always quiet, 
+shifts uncomfortably.
 
-However, one person stands out among the reactions. It's Lady Genevieve. 
+One person stands out among the reactions. It's Lady Genevieve. 
 Her composure falters for just a moment, her eyes darting around the 
 room before she regains her icy demeanor.
 
@@ -187,20 +190,12 @@ Lady Genevieve continues, her voice trembling,
 Mortimer and Miss Penelope had a heated argument about... believe it or not, 
 the merits of using different programming languages than Python.. 
 
-Mortimer was staunchly in favor of Android, while Miss Penelope, well, 
-she was a die-hard iPhone enthusiast."
+Miss Penelope was staunchly in favor Pythons supremacy, while Mortimer, well, 
+he was open to other languages."
 
 The gravity of the situation hits you, but in an unexpected way. 
 The absurdity of their disagreement juxtaposed with the serious tone 
 of Lady Genevieve's revelation is almost surreal.
-
-"And this seemingly trivial argument," she continues, 
-"led to a far more serious consequence. You see, the family trust fund, 
-set up by our late father, was managed by Mortimer. Despite not being the 
-eldest, he was given control due to our father's outdated beliefs. 
-He took advantage of this power and cut Miss Penelope off from her 
-rightful share, believing she couldn't handle the responsibility."
-
 
 This revelation adds a new layer to the mystery, one that hints at 
 deeper family tensions and hidden motives.
@@ -220,7 +215,6 @@ def branch_a1_1_1_1():
         """
 Go into the next room to try and find Miss Penelope and ask her about 
 the argument.
-
 
 With newfound determination, you decide to seek out Miss Penelope to get 
 her side of the story. You make your way to the next room, your footsteps 
@@ -261,7 +255,7 @@ manor, along with the identity of Mortimer's killer, remain locked away forever.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
+--------------------------------------------------------------------------------
         """
     )
     
@@ -313,7 +307,7 @@ and the identity of Mortimer's killer remains a mystery.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
+--------------------------------------------------------------------------------
         """
     )
 
@@ -325,8 +319,7 @@ You swiftly decide to follow the departing family members. Each takes a differen
 direction, leaving you with a moment of decision. The person closest to you, 
 their silhouette disappearing into the dimly lit chamber, catches your 
 attention. There's something about the way they glance back, a hint 
-of suspicion in their eyes, that makes you believe they may be holding onto 
-some crucial information.
+of suspicion in their eyes..
 
 Without further hesitation, you choose to tail them. They walk briskly down 
 the corridor, their steps purposeful. The echo of their heels against the 
@@ -370,8 +363,7 @@ culminating in a deadly encounter. The enigma of Whodunit Manor remains unsolved
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
-
+--------------------------------------------------------------------------------
     """)
 
 
@@ -483,7 +475,6 @@ The detective's pursuit of the truth ends in a chilling and untimely demise.
 The secrets of Whodunit Manor, particularly the sinister activities in the 
 basement, remain forever shrouded in mystery.
 
-
 '   _________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
 '  |_/ | | \_|  | |__| |    | |_ \_|  
@@ -497,8 +488,7 @@ basement, remain forever shrouded in mystery.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
-
+--------------------------------------------------------------------------------
         """
     )
 
@@ -533,7 +523,6 @@ leading to the family losing confidence in your ability to solve the case.
 With the decision made to seek the assistance of another detective, 
 you make your exit from Whodunit Manor.
 
-
 '   _________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
 '  |_/ | | \_|  | |__| |    | |_ \_|  
@@ -547,7 +536,7 @@ you make your exit from Whodunit Manor.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
+--------------------------------------------------------------------------------
         """
     )
 
@@ -582,8 +571,6 @@ from the shadows, a voice whispers in your ear.
 
 As you try to grab hold of whoever that whispered, you realise that they are 
 already gone..
-
----
 
 You now have two options:
 
@@ -683,8 +670,7 @@ Your attempt to navigate this treacherous path will leave an
 indelible mark on the annals of Whodunit Manor, even if it remains 
 shrouded in secrecy.
 
-
-'   _________  ____  ____  ________   
+'   ________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
 '  |_/ | | \_|  | |__| |    | |_ \_|  
 '      | |      |  __  |    |  _| _   
@@ -697,8 +683,7 @@ shrouded in secrecy.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
-
+--------------------------------------------------------------------------------
         """
     )
 
@@ -739,7 +724,6 @@ an obsession that ultimately led to Mortimer's demise.
 Your actions have solved the mystery and have preserved the 
 diversity of programming languages for generations to come.
 
-
 '   _________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
 '  |_/ | | \_|  | |__| |    | |_ \_|  
@@ -753,8 +737,7 @@ diversity of programming languages for generations to come.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
-
+--------------------------------------------------------------------------------
     """)
 
 def branch_a2_2():
@@ -877,7 +860,6 @@ The cult-like atmosphere in the basement speaks volumes.
 The secrets of Whodunit Manor, and the extent of their devotion to... 
 whatever this is, remain shrouded in darkness.
 
-
 '   _________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
 '  |_/ | | \_|  | |__| |    | |_ \_|  
@@ -891,8 +873,7 @@ whatever this is, remain shrouded in darkness.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
-
+--------------------------------------------------------------------------------
         """
     )
 
@@ -926,7 +907,6 @@ In a short while, the police arrive and take you into custody.
 The truth of Mortimer's demise, along with any other mysteries 
 the manor holds, will remain forever shrouded.
 
-
 '   _________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
 '  |_/ | | \_|  | |__| |    | |_ \_|  
@@ -940,7 +920,7 @@ the manor holds, will remain forever shrouded.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
+--------------------------------------------------------------------------------
         """
     )
 
@@ -1040,7 +1020,6 @@ You watch from a distance, satisfied that your quick thinking and bravery led to
 the unraveling of this bizarre case. With the manor now secured, you make your 
 exit, knowing that you've once again proven yourself as a true Detective 
 Extraordinaire.
-
  
 '   _________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
@@ -1055,7 +1034,7 @@ Extraordinaire.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
+--------------------------------------------------------------------------------
         """
     )
 
@@ -1090,7 +1069,6 @@ The cult-like atmosphere in the basement speaks volumes.
 The secrets of Whodunit Manor, and the extent of their devotion to... 
 whatever this is, remain shrouded in darkness.
 
-
 '   _________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
 '  |_/ | | \_|  | |__| |    | |_ \_|  
@@ -1104,7 +1082,7 @@ whatever this is, remain shrouded in darkness.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
+--------------------------------------------------------------------------------
         """
     )
 
@@ -1131,8 +1109,8 @@ catching your attention. It emanates an aura of mystery.
 
 What will you do?
 
-    A. Explore the room behind the sturdy wooden door.
-    B. Explore the basement further 
+A. Explore the room behind the sturdy wooden door.
+B. Explore the basement further 
 
         """
     )
@@ -1184,7 +1162,6 @@ Your investigation at Whodunit Manor ends here. The secrets of Whodunit Manor,
 and the extent of their devotion to... whatever this is, remain shrouded 
 in darkness.
 
-
 '   _________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
 '  |_/ | | \_|  | |__| |    | |_ \_|  
@@ -1198,7 +1175,7 @@ in darkness.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
+--------------------------------------------------------------------------------
         """
     )
 
@@ -1232,7 +1209,6 @@ Your adventure at Whodunit Manor is but a distant memory, lost in the
 recesses of your mind. The secrets and mysteries of the manor remain forever 
 concealed.
 
-
 '   _________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
 '  |_/ | | \_|  | |__| |    | |_ \_|  
@@ -1246,7 +1222,7 @@ concealed.
 '   _| |__/ | _| |_\   |_  _| |_.' /  
 '  |________||_____|\____||______.'   
 '                                     
-
+--------------------------------------------------------------------------------
         """
 
     )
@@ -1271,7 +1247,7 @@ Farewell, and may your adventures continue in the realm of the unknown.
 '  \ `.___]  || \__. || \__. || \__/    |  |  \__/ | \ '/ / | \__. , |_| 
 '   `._____.'  '.__.'  '.__.'  '.__.; __][__;.__.'[\_:   /   '.__.'  (_) 
 '                                                  \ __ .'              
-
+--------------------------------------------------------------------------------
         """
     )
 
