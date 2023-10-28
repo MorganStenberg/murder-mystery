@@ -133,8 +133,8 @@ def user_choices():
             print((f"And you are the {retrieve_player_number()}"
                     " player to play the game! \n"))
             while True:
-                end_or_restart = input(("Do you want to play again?"
-                                        "Y for yes N for no\n").lower())
+                end_or_restart = input("Do you want to play again?"
+                                        " Y for yes N for no\n").lower()
                 if end_or_restart == "y":
                     clear_screen()
                     story.welcome()

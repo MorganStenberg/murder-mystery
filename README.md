@@ -48,10 +48,12 @@ Then the user can choose between Y to start the game and Q to quit the game.
 ![Screenshot of the terminal with the choice to start the game](documentation/start_game.PNG)
 
 ### Player choice
-Once the game is started the player is presented with the first choice, which will take them down different branches of the story. 
+Once the game is started the player is presented with a choice, which will take them down different branches of the story. 
 ![Screenshot of the terminal with the first choice for the player](documentation/player_choice.PNG)
 
 ### Wrong input
+If the user enters an invalid input, they are presented with a text acknowledging that and they are prompted to enter a valid input
+![Screenshot of the terminal with wrong input by user](documentation/wrong_input.PNG)
 
 ### End of game
 
@@ -89,6 +91,7 @@ The game has been tested throughout the build process by running it directly in 
 ### Problems encountered during build process
 
 - Refactoring the main logic for the game and problems related to the refactoring. 
+- bug with wrong input - connected to refactored main function
 
 
 ## Deployment
