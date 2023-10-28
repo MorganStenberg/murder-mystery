@@ -37,6 +37,24 @@ I used a flowchart to map out the different branches of the story. With some min
 
 ## Features
 
+### How to play 
+It is very easy to play the game, you simply enter the requested input, "Y to start, Q to quit" or "A" or "B" for the different choices during the game. 
+
+### Welcome screen
+Here the user is welcomed to the game and is prompted to enter their username/detectives name. 
+![Screenshot of the terminal with the welcome screen](documentation/Welcome_screen.PNG)
+
+Then the user can choose between Y to start the game and Q to quit the game. 
+![Screenshot of the terminal with the choice to start the game](documentation/start_game.PNG)
+
+### Player choice
+Once the game is started the player is presented with the first choice, which will take them down different branches of the story. 
+![Screenshot of the terminal with the first choice for the player](documentation/player_choice.PNG)
+
+### Wrong input
+
+### End of game
+
 ### Future features
 
 ## Technologies

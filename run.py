@@ -111,6 +111,7 @@ def user_choices():
 
     list_of_decisions = []
     decisions = None
+    selected_path = ''
 
     while True:
         decisions = input("Enter your choice here: \n").lower()
@@ -129,8 +130,8 @@ def user_choices():
 
             update_worksheet(username, selected_path)
             compare_selected_paths(selected_path)
-            print((f"And you are the {retrieve_player_number()} "
-                    "player to play the game! \n"))
+            print((f"And you are the {retrieve_player_number()}"
+                    " player to play the game! \n"))
             while True:
                 end_or_restart = input(("Do you want to play again?"
                                         "Y for yes N for no\n").lower())
@@ -174,7 +175,7 @@ def compare_selected_paths(selected_path):
     player_path = user_path.col_values(2)[1:]
     compare_paths = player_path.count(selected_path)
     print(f"You have reached the end of the game.\nYou are the {compare_paths}"
-            f"player that has chosen this path: {selected_path}")
+            f" player that has chosen this path: {selected_path}")
 
 
 def main():
