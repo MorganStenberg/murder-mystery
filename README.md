@@ -56,8 +56,15 @@ If the user enters an invalid input, they are presented with a text acknowledgin
 ![Screenshot of the terminal with wrong input by user](documentation/wrong_input.PNG)
 
 ### End of game
+When the user has reached the end of the story branch that they have traversed, they are presented with a text concluding the game and ASCII art adding "The End". They can now choose between playing again or ending the game. If they choose to play again they are taken back to the first choice of the game. 
+![Screenshort of the terminal when end of game is reached](documentation/end_game.PNG)
+
+### Goodbye screen
+This is presented when they user has either chosen to not start the game in the beginning or when they choose to not restart the game after reaching the end. 
+![Screenshort of terminal when user decides to not play](documentation/goodbye_screen.PNG)
 
 ### Future features
+- An effect that prints the text slowly for the user, as to make it feel like the story is written out for the user.
 
 ## Technologies
 
