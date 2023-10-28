@@ -175,7 +175,7 @@ def branch_a1_1_1():
         """
 Press Lady Genevieve further about her reaction and any potential secrets.
 
-You turn your attention back to Lady Genevieve, who stands with a steely resolve.
+You turn your attention back to Lady Genevieve.
 "Lady Genevieve, Is there something you're not telling me?"
 
 She hesitates for a moment, then sighs.
@@ -239,7 +239,8 @@ of the figure rising from the shadows, but it's too late. Darkness claims you.
 
 The story comes to a sudden, tragic end. Your pursuit of the truth met
 an untimely demise in the heart of Whodunit Manor. The secrets of the
-manor, along with the identity of Mortimer's killer, remain locked away forever.
+manor, along with the identity of Mortimer's killer, 
+remain locked away forever.
 
 '   _________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
@@ -312,12 +313,12 @@ and the identity of Mortimer's killer remains a mystery.
 
 def branch_a1_1_2():
     print(
-    """
-You swiftly decide to follow the departing family members. Each takes a different
-direction, leaving you with a moment of decision. The person closest to you,
-their silhouette disappearing into the dimly lit chamber, catches your
-attention. There's something about the way they glance back, a hint
-of suspicion in their eyes..
+        """
+You swiftly decide to follow the departing family members. Each takes
+a different direction. The person closest to you, their silhouette
+disappearing into the dimly lit chamber, catches your attention.
+There's something about the way they glance back, a hint of
+suspicion in their eyes..
 
 Without further hesitation, you choose to tail them. They walk briskly down
 the corridor, their steps purposeful. The echo of their heels against the
@@ -334,9 +335,9 @@ Before you can react, they turn to face you, their expression a chilling mix of
 determination and desperation. Without a word, they raise the gun..
 
 The world seems to slow for a heartbeat, and then everything happens at once.
-The room fills with the echo of a gunshot, your instincts kicking into overdrive.
+The room fills with the echo of a gunshot.
 
-But it's too late. In a single, fatal shot, they hit their mark.
+In a single, fatal shot, they hit their mark.
 
 The room falls silent once more, the only sound the soft patter of
 rain against the window. The truth of Mortimer's demise, along with
@@ -344,8 +345,8 @@ the answers you sought, remain locked within the walls of Whodunit Manor.
 
 ---
 
-The detective's pursuit of the truth takes an unforeseen turn,
-culminating in a deadly encounter. The enigma of Whodunit Manor remains unsolved.
+The detective's pursuit of the truth takes an unforeseen turn, culminating
+in a deadly encounter. The enigma of Whodunit Manor remains unsolved.
 
 '   _________  ____  ____  ________   
 '  |  _   _  ||_   ||   _||_   __  |  
@@ -463,7 +464,7 @@ Pain surges through your body as you collide with the ground, a searing agony
 that leaves you breathless. In the dim light of your flashlight, you glimpse
 strange symbols and eerie markings adorning the walls.
 
-Gasping for air, you lay there, your vision fading, the symbols etched into your
+Gasping for air, you lay there, vision fading, the symbols etched into your
 memory. You realize, too late, the sinister truth hidden within Whodunit Manor.
 
 ---
@@ -542,7 +543,7 @@ you make your exit from Whodunit Manor.
 
 def branch_a1_2_2():
     print(
-    """
+        """
 You decide to engage with Uncle Reginald, the stern-looking man who challenges
 Lady Genevieve's account of the events. With a firm but polite tone,
 you ask him to share his perspective on that fateful night.
@@ -586,7 +587,7 @@ How would you like to proceed, Detective?
 
 def branch_a2():
     print(
-    """
+        """
 Politely decline and explore the manor on your own.
 
 You thank the butler for his offer but decide to take matters into your own
@@ -616,7 +617,7 @@ You follow an inexplicable pull, leading you deeper into the manor.
 The corridor seems to stretch endlessly, the air growing colder with each step.
 Finally, you arrive at a sturdy wooden door, slightly ajar.
 
-As you push it open, a wave of cold air washes over you, carrying with it a scent
+As you push it open, cold air washes over you, carrying with it a scent
 of damp earth and something else, something... unnatural. The room beyond is
 illuminated by a flickering light, revealing an unexpected sight.
 
@@ -640,8 +641,8 @@ What will you choose, Detective?
 def branch_a2_1_1():
     print(
         """
-You step into the room, determined to free the captive.
-With swift motions, you untie the knots, and the figure's gratitude is palpable.
+You step into the room, determined to free the captive. With swift motions,
+you untie the knots, and the figure's gratitude is palpable.
 
 Before you can exchange a word, a sudden,
 sharp blow to the back of your head sends shockwaves of pain
@@ -667,7 +668,7 @@ virtues washes over you, a relentless tide of fanaticism.
 In their eyes, diversity in programming languages holds little sway.
 
 Time loses meaning, and the realisation that you will never
-leave this chamber slowly hits you. You try to plead for your release to no avail.
+leave this chamber slowly hits you. You plead for your release to no avail.
 
 In this shadowy realm, the fervor for Python eclipses all else.
 Your attempt to navigate this treacherous path will leave an
@@ -694,7 +695,7 @@ shrouded in secrecy.
 
 def branch_a2_1_2():
     print(
-    """
+        """
 You decide to quietly retreat, recognizing the gravity of the situation.
 This is no ordinary family gathering - it's a clandestine cult,
 bound by their extreme devotion to something related to.. a snake shaped
@@ -749,7 +750,7 @@ diversity of programming languages for generations to come.
 
 def branch_a2_2():
     print(
-    """
+        """
 You decide to follow the sound of the voices, your curiosity piqued by the
 hushed but intense conversation. The voices lead you down a dimly lit
 corridor, their urgency growing more pronounced.
@@ -895,11 +896,11 @@ calculated move. The butler, older and perhaps slower than he once was,
 is taken by surprise.
 
 Your decisive strike lands, and the butler stumbles back, 
-a look of shock and pain contorting his face. It's clear that he's been injured.
+a look of shock and pain contorting his face. It's clear that he's injured.
 
 However, before you can react further, the commotion draws
-the attention of the family members. They rush in, their
-faces a mix of astonishment and outrage at the sight of their butler being attacked.
+the attention of the family members. They rush in, their faces a mix of
+astonishment and outrage at the sight of their butler being attacked.
 
 "You dare to harm one of us?" Lady Genevieve's voice drips with venom.
 "You will pay dearly for this."
@@ -984,8 +985,8 @@ B. Go down in the basement
 def branch_b1_1():
     print(
         """
-As the steps draw nearer, your heart races. Instinct takes over, and you quietly
-slip away, retracing your steps through the dark hallways.
+As the steps draw nearer, your heart races. Instinct takes over, and you
+quietly slip away, retracing your steps through the dark hallways.
 
 You find yourself in front of an imposing door, which, when opened, reveals a
 richly furnished study. It's clear this is where Mortimer, the head of the
@@ -1000,13 +1001,13 @@ With a mix of trepidation and determination, you click play.
 The screen comes to life, displaying a chilling scene of a darkened chamber,
 adorned with arcane symbols. Figures cloaked in shadows move in deliberate
 motions, their voices raised in an eerie chant. The ritual is unmistakable -
-this is a cult, and it seems to be connected to some sort of snake like creature,
-maybe a Python..?
+this is a cult, and it seems to be connected to some sort of snake..
+Maybe a Python..?
 
 What do you do next?
 
 A. This is too wierd to handle on your own, call the authorities.
-B. Leave the study and continue exploring the house, taking with you the laptop.
+B. Leave the study and continue exploring the house, taking the laptop.
         """
     )
 
@@ -1015,17 +1016,17 @@ def branch_b1_1_1():
     print(
         """
 You quickly pull out your phone and dial the emergency number. Within minutes,
-the calm yet assertive voice of an operator reassures you that help is on the way.
+the operator reassures you that help is on the way.
 
 Soon, the manor is alive with the flashing lights of police cars and the murmur
 of officers combing through every nook and cranny. The family members are taken
-into custody, their bewildered expressions evidence of their shock and disbelief.
+into custody, their expressions evidence of their shock and disbelief.
 
-As the investigation deepens, it becomes clear that the strange cult was indeed
-using Python as a means of communication, hiding messages in plain sight. Their
-motives remain shrouded in mystery, but the danger they posed has been extinguished.
+As the investigation deepens, it becomes clear that the strange cult revolved
+around the programming language Python. Their motives remain shrouded in
+mystery, but the danger they posed has been extinguished.
 
-You watch from a distance, satisfied that your quick thinking and bravery led to
+Watching from a distance, satisfied that your quick thinking and bravery led to
 the unraveling of this bizarre case. With the manor now secured, you make your
 exit, knowing that you've once again proven yourself as a true Detective
 Extraordinaire.
@@ -1065,7 +1066,7 @@ your head, sending you spiraling into darkness.
 
 When you finally regain consciousness, your head throbs with pain. Blinking
 against the dim light, you realize you're in the basement. You're bound to
-a chair, The laptop sits on a nearby table, just out of reach. The dim light casts
+a chair, The laptop sits on a table, just out of reach. The dim light casts
 eerie shadows on the walls, illuminating strange snake like symbols etched
 into the stone.
 
@@ -1099,11 +1100,11 @@ def branch_b1_2():
         """
 You steel yourself and cautiously descend the stairs into the basement.
 
-As you reach the bottom, a chill washes over you. The room is filled with an eerie
+You reach the bottom, a chill washes over you. The room is filled with an eerie
 stillness, broken only by the faint flickering lights that cast long, dancing
 shadows on the walls.
 
-Your eyes scan the surroundings, and you notice strange markings etched into the
+Your eyes scan the surroundings, you notice strange markings etched into the
 walls, their meaning eluding you. It's clear that this basement holds secrets
 that defy easy explanation.
 
@@ -1126,7 +1127,7 @@ def branch_b1_2_1():
         """
 As you push the wooden door open, a wave of cold air washes over you, carrying
 with it a scent of damp earth and something else, something... unnatural.
-The room beyond is illuminated by a flickering light, revealing an unexpected sight.
+The room is illuminated by a flickering light, revealing an unexpected sight.
 
 Before you stands a makeshift altar, adorned with candles and strange symbols,
 all arranged in the shape of a python snake. Against the far wall, you spot a
@@ -1155,9 +1156,9 @@ After what feels like an eternity, you stumble upon another door, this one even
 more foreboding than the last. It groans as you push it open, revealing a room
 that chills you to the bone.
 
-Dim light filters in, casting eerie shapes across the floor. Your breath catches
-as you spot it - a colossal python, coiled and poised, its unblinking eyes fixed
-on you. The room seems almost tailor-made for the creature, with strange symbols 
+Dim light filters in, casting eerie shapes across the floor. Suddenly you spot
+it - a colossal python, coiled and poised, its unblinking eyes fixed on you.
+The room seems almost tailor-made for the creature, with strange symbols 
 etched into the walls.
 
 Panic surges through you, but it's too late. With lightning speed, the python
@@ -1199,13 +1200,13 @@ filled with an array of electronic equipment. It's unmistakably a server room.
 Your eyes scan the room, and you notice a console with a blinking red button,
 immediately drawing your attention. It's a curious sight in this old manor.
 
-As you approach, a sense of unease washes over you. You hesitantly press the button,
-and a low hum fills the room. Suddenly, a blinding light engulfs your vision, and
+As you approach, a sense of unease washes over you. You press the button,
+a low hum fills the room. Suddenly, a blinding light engulfs your vision, and
 you feel an overwhelming sense of disorientation.
 
 Moments later, you find yourself in a completely different place, a modern city
-with skyscrapers that seem to touch the sky. The sights and sounds are overwhelming,
-and you're surrounded by people in a rush.
+with skyscrapers that seem to touch the sky. The sights and sounds are
+overwhelming, and you're surrounded by people in a rush.
 
 You check your surroundings, only to realize that you have no memory of
 how you got here or why you're here. All that lingers is an odd compulsion
