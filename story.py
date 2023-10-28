@@ -46,7 +46,7 @@ as you might think..
 
 Do you think you have what it takes to uncover the secrets of Whodunit Manor?
         """
-)
+        )
 
 
 def welcome():
@@ -494,20 +494,21 @@ def branch_a1_2_1_2():
     print(
         """
 You choose to remain in the drawing room, determined to bring some semblance of
-order to the chaos. Just as you're about to shout, "Who was it that just whispered?"
-the lights flicker back on, bathing the room in a sudden, startling brightness.
-Simultaneously, you've already begun to shout, creating a bizarre contrast of noise and light.
+order to the chaos. Just as you're about to shout, "Who was it that just
+whispered?" the lights flicker back on, bathing the room in a sudden, startling
+brightness.Simultaneously, you've already begun to shout, creating a bizarre
+contrast of noise and light.
 
-The room falls into a stunned silence. The family members exchange concerned looks,
-clearly taken aback by this unexpected turn of events. You can almost feel their
-unease radiating from them.
+The room falls into a stunned silence. The family members exchange concerned
+looks, clearly taken aback by this unexpected turn of events. You can almost
+feel their unease radiating from them.
 
 Lady Genevieve clears her throat, breaking the silence.
 "I think... perhaps we've all had enough excitement for one evening."
 
-There's a murmur of agreement among the family members. It's clear that they're now
-convinced that you've, for lack of a better term, lost it. They exchange glances,
-and you catch snippets of conversation about hiring someone else,
+There's a murmur of agreement among the family members. It's clear that they're
+nowconvinced that you've, for lack of a better term, lost it. They exchange
+glances, and you catch snippets of conversation about hiring someone else,
 perhaps that famous detective, Benoit Blanc.
 
 You nod, feeling a strange mixture of embarrassment and bewilderment.
@@ -548,7 +549,8 @@ you ask him to share his perspective on that fateful night.
 
 Reginald straightens his posture, his expression determined.
 "It's important to set the record straight. Mortimer was in high spirits,
-excited about an upcoming business venture. There was no sign of distress in him."
+excited about an upcoming business venture. There was no sign of
+distress in him."
 
 Before he can continue, a sudden crash resounds through the mansion,
 followed by the sound of shattering glass. The family members jump in
@@ -560,7 +562,8 @@ across the floor. Lady Genevieve gasps, clutching her chest.
 "What in the world..." she begins, her voice trembling.
 
 Before anyone can react, the lights flicker and then go out entirely.
-The room is plunged into darkness, and a collective gasp sweeps through the family.
+The room is plunged into darkness, and a collective gasp sweeps through
+the family.
 
 In the chaos that follows, as everybody is trying to get the lights back on
 from the shadows, a voice whispers in your ear.
@@ -586,17 +589,18 @@ def branch_a2():
     """
 Politely decline and explore the manor on your own.
 
-You thank the butler for his offer but decide to take matters into your own hands.
-The manor is vast, and you're eager to uncover any hidden secrets it may hold.
+You thank the butler for his offer but decide to take matters into your own
+hands. The manor is vast, and you're eager to uncover any hidden secrets it
+may hold.
 
-As you venture further into the manor, you find yourself in a dimly lit corridor,
-lined with paintings of somber-faced ancestors. The air feels cooler here, and a 
-faint echo of distant voices reaches your ears.
+As you venture further into the manor, you find yourself in a dimly lit
+corridor lined with paintings of somber-faced ancestors. The air feels
+cooler here, and a faint echo of distant voices reaches your ears.
 
 You have two options:
 
-    A. Make your way to the basement, drawn by a strange and eerie sensation.
-    B. Follow the sound of the voices.
+A. Make your way to the basement, drawn by a strange and eerie sensation.
+B. Follow the sound of the voices.
 
 What will you choose?
     """
