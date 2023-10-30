@@ -20,13 +20,13 @@ Link to live site: https://murder-mystery-text-game-fb1e2ed36c7e.herokuapp.com/
 - Insert screenshot here:
 
 ## User stories
-This application is created for anybody that enjoys a good mystery and some wierd twists along the way.
+This application is created for anybody that enjoys a good mystery and some weird twists along the way.
 
 - For fans of text-based adventure games, where each decision can take you down a different path.
 - For fans of "Whodunit"/detective movies and games, where the plot thickens the deeper you get.
 
 ## Strategy
-The strategy for developing this game was to make a fun, engaging and simple game. Where the correct choice is not always obvious for the user. With a focus on the narrative story itself, and that different parts is revealed with the different paths taken in the game. So that the user can play the game multiple times and have different experiences. 
+The strategy for developing this game was to make a fun, engaging and simple game. Where the correct choice is not always obvious for the user. With a focus on the narrative story itself, and that different parts are revealed with the different paths taken in the game. So that the user can play the game multiple times and have different experiences. 
 
 It is also designed to be user friendly, with a simple choice-based system that takes the user through the game. 
 
@@ -41,7 +41,7 @@ I used a flowchart to map out the different branches of the story. With some min
 It is very easy to play the game, you simply enter the requested input, "Y to start, Q to quit" or "A" or "B" for the different choices during the game. 
 
 ### Welcome screen
-Here the user is welcomed to the game and is prompted to enter their username/detectives name. 
+Here the user is welcomed to the game and is prompted to enter their username/detective's name. 
 ![Screenshot of the terminal with the welcome screen](documentation/Welcome_screen.PNG)
 
 Then the user can choose between Y to start the game and Q to quit the game. 
@@ -57,12 +57,12 @@ If the user enters an invalid input, they are presented with a text acknowledgin
 
 ### End of game
 When the user has reached the end of the story branch that they have traversed, they are presented with a text concluding the game and ASCII art adding "The End". They can now choose between playing again or ending the game. If they choose to play again they are taken back to the first choice of the game. 
-They are also presented with some information about their chosen path in the game, how many that has chosen that exact path before them and how many that has played the game in total. This information is taken from an google sheet that stores the paths of all the users and then compares that to the current path taken by the user. 
-![Screenshort of the terminal when end of game is reached](documentation/end_game.PNG)
+They are also presented with some information about their chosen path in the game, how many that have chosen that exact path before them and how many that have played the game in total. This information is taken from a google sheet that stores the paths of all the users and then compares that to the current path taken by the user. 
+![Screenshot of the terminal when end of game is reached](documentation/end_game.PNG)
 
 ### Goodbye screen
-This is presented when they user has either chosen to not start the game in the beginning or when they choose to not restart the game after reaching the end. 
-![Screenshort of terminal when user decides to not play](documentation/goodbye_screen.PNG)
+This is presented when the user has either chosen to not start the game in the beginning or when they choose to not restart the game after reaching the end. 
+![Screenshot of terminal when user decides to not play](documentation/goodbye_screen.PNG)
 
 ### Future features
 - An effect that prints the text slowly for the user, as to make it feel like the story is written out for the user.
@@ -87,21 +87,21 @@ This is presented when they user has either chosen to not start the game in the 
 ## Testing
 
 ### Validating
-The only errors that show up are related to the ASCII art that is used, as well as errors for visual indentation of long lines. 
+The code has been put through [CI Python Linter](https://pep8ci.herokuapp.com/#). The only errors that show up are related to the ASCII art that is used, as well as errors for visual indentation of long lines. 
 
 ### Manual testing
-The game has been tested throughout the build process by running it directly in the console, this in combination with adding in print statements to see how the code progresses has helped alot in debugging amd solving problems with the code. 
+The game has been tested throughout the build process by running it directly in the console, this in combination with adding in print statements to see how the code progresses has helped a lot in debugging and solving problems with the code. 
 
 
 
 ## Bugs
 
-- Not clearing the terminal completely once deployed. The function clear_screen is not clearing all of the content that is in the terminal when running the game deployed on Heruko. It is only clearing what content is visible in the terminal, so some text will be left that belongs to previous branches. 
+- Not clearing the terminal completely once deployed. The function clear_screen is not clearing all of the content that is in the terminal when running the game deployed on Heroku. It is only clearing what content is visible in the terminal, so some text will be left that belongs to previous branches. 
 
 ### Problems encountered during build process
 
 - Refactoring the main logic for the game, the function that handles the user choices, and problems related to the refactoring. 
-I started building the game with different functions for each level that the player traversed through the game, but I realised that this became quite unwieldy and would have been tiresome to work with. So I made one function to handle every choice made by the user.
+I started building the game with different functions for each level that the player traversed through the game, but I realized that this became quite unwieldy and would have been tiresome to work with. So I made one function to handle every choice made by the user.
 
 It took a long time to get this function to work, and I had trouble with everything from handling invalid input to what kind of method I should use to access the functions with the different branches of the story. I especially had trouble with how to handle ending the game when the user reached the end of a story branch and how to handle branches of the story that were shorter than others, since I didn't want every branch to be the same length. 
 
@@ -121,7 +121,7 @@ The project was deployed to [Heroku](https://www.heroku.com) using the below pro
 - Once the web portal shows the green tick to confirm the name is original **select the relevant region.** In my case, I chose Europe as I am in Sweden.
 - When happy with your choice of name and that the correct region is selected, **click** on the **"Create app" button**.
 - This will bring you to the project "Deploy" tab. From here, navigate to the **settings tab** and scroll down to the **"Config Vars" section**. 
-- **Click** the button labelled **"Reveal Config Vars"** and create config vars for CREDS and PORT.
+- **Click** the button labeled **"Reveal Config Vars"** and create config vars for CREDS and PORT.
 - Scroll down to the **buildpacks section of the settings page** and click the button labeled **" add buildpack," select "Python," and click "Save Changes"**.
 - **Repeat but** this time **add "node.js" instead of python**. 
    -  ***IMPORTANT*** The buildpacks must be in the correct order.
