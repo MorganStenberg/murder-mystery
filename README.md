@@ -96,8 +96,8 @@ The code has been put through [CI Python Linter](https://pep8ci.herokuapp.com/#)
 The game has been tested throughout the build process by running it directly in the console, this in combination with adding in print statements to see how the code progresses has helped a lot in debugging and solving problems with the code. 
 
 - All the different story branches have been tested, each working as intended. 
-- Restaring game after reaching end of game. 
-- Quitting the game after reaching end of game, as well as chosing to not start the game. One bug found regarding quitting the game, se details below.
+- Restarting the game game after reaching end of the game game. 
+- Quitting the game after reaching the end of game, as well as choosing to not start the game. One bug found regarding quitting the game, see details below.
 - Handling invalid input. 
 - Validating username.
 - Storing and retrieving data from google sheet works as intended. 

@@ -41,7 +41,7 @@ def clear_screen():
 
 def get_username():
     """
-    Starts the game by asking the user for a username
+    Asking the user to input a username.
     """
     global username
     print("Please select your detective name..\n")
@@ -78,7 +78,7 @@ def validate_username(username):
 
 def initialize_game():
     """
-    Asks the user to start the game via pressing Y
+    Asks the user to start the game via input, provides option to quit game.
     """
     while True:
         initialize_game = input("Y to start. Q to quit the game\n").lower()
@@ -147,7 +147,7 @@ def update_worksheet(username, selected_path):
 
 def compare_selected_paths(selected_path):
     """
-    Compares the current path chosen by the user with previous paths taken by
+    Compares the current path chosen by the user with previous paths taken by the same user or
     other users. And tells the user how many, if any, has chosen their
     specific path before them.
     """
