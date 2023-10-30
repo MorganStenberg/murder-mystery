@@ -17,7 +17,8 @@ You play the game as a detective arriving to solve a mysterious murder and your 
 
 ## Demo
 Link to live site: https://murder-mystery-text-game-fb1e2ed36c7e.herokuapp.com/
-- Insert screenshot here:
+
+![Screenshot of welcome page](documentation/Welcome_screen.PNG)
 
 ## User stories
 This application is created for anybody that enjoys a good mystery and some weird twists along the way.
