@@ -106,7 +106,7 @@ The game has been tested throughout the build process by running it directly in 
 
 ## Bugs
 
-- Not clearing the terminal completely once deployed. The function clear_screen is not clearing all of the content that is in the terminal when running the game deployed on Heroku. It is only clearing what content is visible in the terminal, so some text will be left that belongs to previous branches. 
+- Not clearing the terminal completely once deployed. The function clear_screen is not clearing all of the content that is in the terminal when running the game deployed on Heroku. It is only clearing what content is visible in the terminal, so some text will be left that belongs to previous branches. This has been partially solved by shortening some text content and decreasing the size of the end of game ASCII-art.  
 
 ### Solved bugs
 - If the user has played several times and then chooses to quit the game, the goodbye text is shown but it also asks for input. This does not appear when quitting the game directly or after just one "round". This was solved by refactoring user choice function and main function, to avoid recursive code. This was done with the help of my mentor Sandeep. 
