@@ -75,6 +75,7 @@ This is presented when the user has either chosen to not start the game in the b
 
 ### Libraries and packages
 - **OS** and **Platform** for the clear_screen function
+- **Sys** for exiting the game.
 - **Time**, to delay printing of text to terminal
 - **Gspread**, to use with connecting google sheet
 
@@ -104,12 +105,13 @@ The game has been tested throughout the build process by running it directly in 
 ## Bugs
 
 - Not clearing the terminal completely once deployed. The function clear_screen is not clearing all of the content that is in the terminal when running the game deployed on Heroku. It is only clearing what content is visible in the terminal, so some text will be left that belongs to previous branches. 
-- If the user has played several times and then chooses to quit the game, the goodbye text is shown but it also asks for input. This does not appear when quitting the game directly or after just one "round". 
+
+### Solved bugs
+- If the user has played several times and then chooses to quit the game, the goodbye text is shown but it also asks for input. This does not appear when quitting the game directly or after just one "round". This was solved by refactoring user choice function and main function, to avoid recursive code. This was done with the help of my mentor Sandeep. 
 
 ### Problems encountered during build process
 
 - Refactoring the main logic for the game, the function that handles the user choices, and problems related to the refactoring.
-
 
 I started building the game with different functions for each level that the player traversed through the game, but I realized that this became quite unwieldy and would have been tiresome to work with. So I made one function to handle every choice made by the user.
 

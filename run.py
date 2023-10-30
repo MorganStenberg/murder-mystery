@@ -95,8 +95,7 @@ def user_choices():
     """
     Handles the main logic for the game and all the user choices.
     Traverses through the different branches depending on the user input.
-    When the end of a branch is reached, asks the user if they want to
-    restart the game and displays information on what number of player
+    When the end of a branch is reached, displays information on what number of player
     the user is. Sets global variables needed for game.
     """
     global decisions
@@ -109,10 +108,10 @@ def user_choices():
 
     while True:
         decisions = input("Enter your choice here: \n").lower()
-        if decisions in {"a", "b"}:
+        if decisions in {"a", "b"}:  # Validating user input, only appending to selected path if valid
             list_of_decisions.append(decisions)
             selected_path = ''.join(list_of_decisions)
-            if selected_path in story.map_of_functions:
+            if selected_path in story.map_of_functions: 
                 clear_screen()
                 time.sleep(0.5)
                 story.map_of_functions[selected_path]()
@@ -121,8 +120,7 @@ def user_choices():
 
         if ((selected_path + "a") not in story.map_of_functions
             or (selected_path + "b") not in story.map_of_functions):
-
-            update_worksheet(username, selected_path)
+            update_worksheet(username, selected_path)  # Updating sheet with path, only if end of game has been reached
             compare_selected_paths(selected_path)
             print((f"And you are the {retrieve_player_number()}"
                     " player to play the game! \n"))
@@ -159,13 +157,17 @@ def compare_selected_paths(selected_path):
             f" player that has chosen this path: {selected_path}")
 
 def start_game():
+    """
+    Starting the game by calling correct the correct functions.
+    """
     clear_screen()
     story.welcome()
     user_choices()
 
 def main():
     """
-    Starting the game by calling the correct functions
+    Calling functions for introduction and initializing game, exits if user decides to not play
+    Also asks the user if they want to play again and calls correct function depending on input
     """
     story.introduction_text()
     username = get_username()

@@ -1260,7 +1260,7 @@ Farewell, and may your adventures continue in the realm of the unknown.
 
 
 # Dictionary mapping relevant branches to user choices,
-# to be used by make_choice function.
+# to be used by user_choices function.
 map_of_functions = {
     'a': branch_a,
     'aa': branch_a1,
