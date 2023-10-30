@@ -643,12 +643,9 @@ As you make your way back towards the manor's entrance, you take
 out your phone and dial the authorities.
 
 With a sense of urgency, you provide them with the location and
-details of what you found in the basement. Within moments, the
-sound of approaching sirens fills the air.
-
-As you step outside to meet the authorities, you're met with
-a squad of determined officers, ready to apprehend the family members.
-The family's reign of fanaticism comes to an abrupt end.
+details of what you found in the basement.As you step outside to meet
+the authorities, you're met with a squad of determined officers, 
+ready to apprehend the family members.
 
 Each member is taken into custody, their expressions ranging
 from disbelief to defiant resignation. The truth of Mortimer's
@@ -656,10 +653,7 @@ murder, entangled with their fanatical devotion, will now be
 scrutinized by the justice system.
 
 You've brought an end to this dark chapter in Whodunit Manor's
-history. Your resolve and determination have triumphed over
-the shadows of fanaticism, and justice will prevail.
-
-As the investigation unfolds, the full extent of the cult's
+history. As the investigation unfolds, the full extent of the cult's
 fanaticism is revealed. It turns out, their extreme devotion
 was centered around the Python programming language,
 an obsession that ultimately led to Mortimer's demise.
@@ -724,10 +718,9 @@ As you descend the narrow staircase, the air grows colder,
 and the echoes of your footsteps reverberate.
 The flickering light of a lone bulb barely illuminates the space.
 
-Your breath catches in your throat as you take in
-the sight before you. The basement is adorned with
-eerie symbols, arranged in the shape of a python snake.
-It's a startling revelation.
+Your breath catches in your throat as you take in the sight
+before you. The basement is adorned with eerie symbols, arranged
+in the shape of a python snake. It's a startling revelation.
 
 A sense of foreboding washes over you, realizing that
 there's more to this family and this manor than
