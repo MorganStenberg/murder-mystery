@@ -5,6 +5,7 @@ import platform
 import time
 import gspread
 from google.oauth2.service_account import Credentials
+import sys
 
 
 SCOPE = [
@@ -38,7 +39,7 @@ def clear_screen():
         os.system('clear')
 
 
-def start_game_get_username():
+def get_username():
     """
     Starts the game by asking the user for a username
     """
@@ -71,31 +72,23 @@ def validate_username(username):
 
     if valid:
         print(f"\nWelcome detective.. {username}\n")
-        initialize_game()
     if valid is False:
-        start_game_get_username()
+        get_username()
 
 
 def initialize_game():
     """
     Asks the user to start the game via pressing Y
-    Calls correct functions to start game
     """
     while True:
         initialize_game = input("Y to start. Q to quit the game\n").lower()
         if initialize_game == "y":
-            clear_screen()
             time.sleep(1)
-            story.welcome()
-            user_choices()
-            break
+            return True
         elif initialize_game == "q":
-            clear_screen()
-            time.sleep(1)
-            story.end_of_game_text()
-            break
+            return False
         else:
-            print("Wrong choice, do you not dare to take on this challenge?")
+            print("Invalid choice, please input Y or Q.\n")
 
 
 def user_choices():
@@ -133,20 +126,7 @@ def user_choices():
             compare_selected_paths(selected_path)
             print((f"And you are the {retrieve_player_number()}"
                     " player to play the game! \n"))
-            while True:
-                end_or_restart = input("Do you want to play again?"
-                                        " Y for yes N for no\n").lower()
-                if end_or_restart == "y":
-                    clear_screen()
-                    story.welcome()
-                    user_choices()
-                    break
-                elif end_or_restart == "n":
-                    clear_screen()
-                    story.end_of_game_text()
-                    return
-                else:
-                    print("Invalid choice, please input Y or N")
+            return
 
 
 def retrieve_player_number():
@@ -178,13 +158,35 @@ def compare_selected_paths(selected_path):
     print(f"You have reached the end of the game.\nYou are the {compare_paths}"
             f" player that has chosen this path: {selected_path}")
 
+def start_game():
+    clear_screen()
+    story.welcome()
+    user_choices()
 
 def main():
     """
     Starting the game by calling the correct functions
     """
     story.introduction_text()
-    username = start_game_get_username()
+    username = get_username()
+    init = initialize_game()
+    if not init:
+        story.end_of_game_text()
+        sys.exit(1)
+
+    start_game()
+    while True:
+        end_or_restart = input(
+            "Do you want to play again?" " Y for yes N for no\n").lower()
+        if end_or_restart == "y":
+            start_game()
+        elif end_or_restart == "n":
+            clear_screen()
+            story.end_of_game_text()
+            break
+        else:
+            print("Invalid choice, please input Y or N")
+
 
 
 if __name__ == "__main__":
