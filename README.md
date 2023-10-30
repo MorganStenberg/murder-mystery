@@ -24,6 +24,7 @@ This application is created for anybody that enjoys a good mystery and some weir
 
 - For fans of text-based adventure games, where each decision can take you down a different path.
 - For fans of "Whodunit"/detective movies and games, where the plot thickens the deeper you get.
+- For those that want to see their chosen path through the game and to see if they were the first to go down that specific path. 
 
 ## Strategy
 The strategy for developing this game was to make a fun, engaging and simple game. Where the correct choice is not always obvious for the user. With a focus on the narrative story itself, and that different parts are revealed with the different paths taken in the game. So that the user can play the game multiple times and have different experiences. 
@@ -124,6 +125,10 @@ This was eventually solved with alot of trying and failing, reading through Stac
 
 ## Deployment
 
+### Cloning repository
+If you want to clone the [repository](https://github.com/MorganStenberg/murder-mystery) for this application follow these instructions on [Github](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+### Heroku
 The project was deployed to [Heroku](https://www.heroku.com) using the below procedure:    
   
 - **Log in to Heroku** or create an account if required.
