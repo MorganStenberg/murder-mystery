@@ -92,15 +92,25 @@ The code has been put through [CI Python Linter](https://pep8ci.herokuapp.com/#)
 ### Manual testing
 The game has been tested throughout the build process by running it directly in the console, this in combination with adding in print statements to see how the code progresses has helped a lot in debugging and solving problems with the code. 
 
+- All the different story branches have been tested, each working as intended. 
+- Restaring game after reaching end of game. 
+- Quitting the game after reaching end of game, as well as chosing to not start the game. One bug found regarding quitting the game, se details below.
+- Handling invalid input. 
+- Validating username.
+- Storing and retrieving data from google sheet works as intended. 
+
 
 
 ## Bugs
 
 - Not clearing the terminal completely once deployed. The function clear_screen is not clearing all of the content that is in the terminal when running the game deployed on Heroku. It is only clearing what content is visible in the terminal, so some text will be left that belongs to previous branches. 
+- If the user has played several times and then chooses to quit the game, the goodbye text is shown but it also asks for input. This does not appear when quitting the game directly or after just one "round". 
 
 ### Problems encountered during build process
 
-- Refactoring the main logic for the game, the function that handles the user choices, and problems related to the refactoring. 
+- Refactoring the main logic for the game, the function that handles the user choices, and problems related to the refactoring.
+
+
 I started building the game with different functions for each level that the player traversed through the game, but I realized that this became quite unwieldy and would have been tiresome to work with. So I made one function to handle every choice made by the user.
 
 It took a long time to get this function to work, and I had trouble with everything from handling invalid input to what kind of method I should use to access the functions with the different branches of the story. I especially had trouble with how to handle ending the game when the user reached the end of a story branch and how to handle branches of the story that were shorter than others, since I didn't want every branch to be the same length. 
