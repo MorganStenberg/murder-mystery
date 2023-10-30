@@ -103,7 +103,8 @@ def user_choices():
     Handles the main logic for the game and all the user choices.
     Traverses through the different branches depending on the user input.
     When the end of a branch is reached, asks the user if they want to
-    restart the game.Sets global variables needed for game.
+    restart the game and displays information on what number of player
+    the user is. Sets global variables needed for game.
     """
     global decisions
     global list_of_decisions
@@ -180,7 +181,7 @@ def compare_selected_paths(selected_path):
 
 def main():
     """
-    Starting the game with by calling the correct functions
+    Starting the game by calling the correct functions
     """
     story.introduction_text()
     username = start_game_get_username()

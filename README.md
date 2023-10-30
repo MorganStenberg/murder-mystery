@@ -57,6 +57,7 @@ If the user enters an invalid input, they are presented with a text acknowledgin
 
 ### End of game
 When the user has reached the end of the story branch that they have traversed, they are presented with a text concluding the game and ASCII art adding "The End". They can now choose between playing again or ending the game. If they choose to play again they are taken back to the first choice of the game. 
+They are also presented with some information about their chosen path in the game, how many that has chosen that exact path before them and how many that has played the game in total. This information is taken from an google sheet that stores the paths of all the users and then compares that to the current path taken by the user. 
 ![Screenshort of the terminal when end of game is reached](documentation/end_game.PNG)
 
 ### Goodbye screen
@@ -95,19 +96,26 @@ The game has been tested throughout the build process by running it directly in 
 
 ## Bugs
 
+- Not clearing the terminal completely once deployed. The function clear_screen is not clearing all of the content that is in the terminal when running the game deployed on Heruko. It is only clearing what content is visible in the terminal, so some text will be left that belongs to previous branches. 
+
 ### Problems encountered during build process
 
-- Refactoring the main logic for the game and problems related to the refactoring. 
-- bug with wrong input - connected to refactored main function
+- Refactoring the main logic for the game, the function that handles the user choices, and problems related to the refactoring. 
+I started building the game with different functions for each level that the player traversed through the game, but I realised that this became quite unwieldy and would have been tiresome to work with. So I made one function to handle every choice made by the user.
+
+It took a long time to get this function to work, and I had trouble with everything from handling invalid input to what kind of method I should use to access the functions with the different branches of the story. I especially had trouble with how to handle ending the game when the user reached the end of a story branch and how to handle branches of the story that were shorter than others, since I didn't want every branch to be the same length. 
+
+This was eventually solved with alot of trying and failing, reading through Stackoverflow and other sites (links are in credits) and most importantly discussing it with my mentor. 
+
+
 
 
 ## Deployment
 
-The project was deployed to [Heroku](https://www.heroku.com) using the below procedure:-    
+The project was deployed to [Heroku](https://www.heroku.com) using the below procedure:    
   
 - **Log in to Heroku** or create an account if required.
--
-**click** the button labeled **New** from the dashboard in the top right corner, just below the header.
+- **click** the button labeled **New** from the dashboard in the top right corner, just below the header.
 - From the drop-down menu **select "Create new app"**.
 - **Enter a unique app name**. I used the name for the game and added "text-game" to it. 
 - Once the web portal shows the green tick to confirm the name is original **select the relevant region.** In my case, I chose Europe as I am in Sweden.
@@ -128,6 +136,24 @@ The project was deployed to [Heroku](https://www.heroku.com) using the below pro
 ## Credits
 
 - To my mentor Sandeep Aggarwal who was very helpful overall with this project and especially regarding the refactoring of the main logic for the game. 
+
+- How to get username and check if valid. [Code Institute LMS LS101 - Love Sandwiches walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/c92755338ef548f28cc31a7c3d5bfb46/?child=last)
+- Clearing terminal in python [Stackoverflow](https://stackoverflow.com/questions/2084508/clear-terminal-in-python)
+- Accessing Python dictionaries [W3 School](https://www.w3schools.com/python/python_dictionaries_access.asp)
+- Using lower() function [Stackoverflow](https://stackoverflow.com/questions/28406568/need-python-to-accept-upper-and-lower-case-input)
+- Delaying printing to terminal [Reddit](https://www.reddit.com/r/learnpython/comments/16avx3o/is_there_a_way_to_slow_down_text_in_a_console_app)
+- Using in and not in operators [Askpython](https://www.askpython.com/python/examples/in-and-not-in-operators-in-python)
+- Using startswith [W3 School](https://www.w3schools.com/python/ref_string_startswith.asp)
+- Calling a function depending on user input [Stackoverflow](https://stackoverflow.com/questions/52562941/how-to-call-a-function-depending-on-the-user-input)
+- How to store input and call it later [Stackoverflow](https://stackoverflow.com/questions/50670774/how-to-store-user-input-in-python-and-call-it-later)
+- Storing function in a list or dictionary and calling it[Stackoverflow](https://stackoverflow.com/questions/9205081/is-there-a-way-to-store-a-function-in-a-list-or-dictionary-so-that-when-the-inde)
+- Using a dictionary to call function based on user input[Stackoverflow](https://stackoverflow.com/questions/59169733/python-how-to-use-a-dictionary-to-call-methods-values-in-dictionary-to-run-ba)
+- Checking if a key exists in a dictionary[Stackoverflow](https://stackoverflow.com/questions/1602934/check-if-a-given-key-already-exists-in-a-dictionary)
+- Accessing python dict values with the key start characters[Stackoverflow](https://stackoverflow.com/questions/17106819/accessing-python-dict-values-with-the-key-start-characters)
+- Accessing and connecting to Google Sheet [Code Institute LMS LS101 - Love Sandwiches walkthrough project](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/071036790a5642f9a6f004f9888b6a45/)
+- Ignoring header in google sheet with Gspread [Docs Gspread](https://docs.gspread.org/en/latest/user-guide.html#finding-all-matched-cells)
+- Guide for deployment was inspired by [dnlbowers README](https://github.com/dnlbowers/battleships/blob/main/README.md)
+
 
 **Story**
 - The contents for the story itself was created with the help of [ChatGPT](https://chat.openai.com/), by giving it prompts regarding the outline for the story and then what the different branches should lead to. 
