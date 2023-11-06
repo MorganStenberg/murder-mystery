@@ -53,6 +53,8 @@ def validate_username(username):
     """
     Validates username by checking that the user does not leave it blank,
     that it is atleast 2 characters and no longer than 10 characters.
+    The code for this function was inspired by the Love Sandwiches
+    walkthrough on Code Institute LMS, see link in credits. 
     """
     valid = True
     try:
@@ -99,6 +101,9 @@ def user_choices():
     user and then displays information on what number of
     player the user is.
     Sets global variables needed for game.
+    The code for this function has been inspired by multiple
+    answers on Stackoverflow, see links in credits, as well as 
+    from my mentor. 
     """
     global decisions
     global list_of_decisions
@@ -142,6 +147,8 @@ def update_worksheet(username, selected_path):
     """
     Updates google sheet with username and the users chosen path in the game,
     aswell as the player number for the user.
+    The code for this function was inspired by the Love Sandwiches
+    walkthrough on Code Institute LMS, see link in credits. 
     """
     player_count = retrieve_player_number()
     user_path.append_row([username, selected_path, player_count + 1])
