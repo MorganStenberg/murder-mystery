@@ -1,6 +1,5 @@
 """
 This file contains the story for the game.
-The introduction text is declared as a variable.
 The different branches of the story are defined as different functions
 
 The functions are also mapped to keys in a dictionary, which is used
