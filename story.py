@@ -1,20 +1,19 @@
-""" 
-This file contains the story for the game. 
+"""
+This file contains the story for the game.
 The introduction text is declared as a variable.
-The different branches of the story are defined as different functions 
+The different branches of the story are defined as different functions
 
-The functions are also mapped to keys in a dictionary, which is used 
+The functions are also mapped to keys in a dictionary, which is used
 to call the correct function based on the user input.
 
-This file is imported in to the run.py file. 
+This file is imported in to the run.py file.
 
 """
 
 
 def introduction_text():
-    print("""
-
-
+    print(
+        """
 '                ____    ____                        __                
 '               |_   \  /   _|                      |  ]               
 '                 |   \/   |  __   _   _ .--.   .--.|  | .---.  _ .--.  
@@ -235,11 +234,9 @@ Then, a searing pain courses through you.
 You stagger, trying to comprehend what just happened. You catch a glimpse
 of the figure rising from the shadows, but it's too late. Darkness claims you.
 
----
-
 The story comes to a sudden, tragic end. Your pursuit of the truth met
 an untimely demise in the heart of Whodunit Manor. The secrets of the
-manor, along with the identity of Mortimer's killer, 
+manor, along with the identity of Mortimer's killer,
 remain locked away forever.
 
   _____ _            _____           _ _ 
@@ -278,9 +275,7 @@ The figure steps forward, emerging from the shadows,
 and for a brief moment, you see their face.
 But it's the last thing you'll ever see.
 
----
-
-The story takes a tragic turn as the detective's pursuit
+The story takes a tragic turn as your pursuit
 of the truth ends in a sudden and violent demise.
 The secrets of Whodunit Manor remain buried,
 and the identity of Mortimer's killer remains a mystery.
@@ -323,9 +318,7 @@ The room falls silent once more, the only sound the soft patter of
 rain against the window. The truth of Mortimer's demise, along with
 the answers you sought, remain locked within the walls of Whodunit Manor.
 
----
-
-The detective's pursuit of the truth takes an unforeseen turn, culminating
+Your pursuit of the truth takes an unforeseen turn, culminating
 in a deadly encounter. The enigma of Whodunit Manor remains unsolved.
   _____ _            _____           _ _ 
  |_   _| |__   ___  | ____|_ __   __| | |
@@ -435,9 +428,7 @@ strange symbols and eerie markings adorning the walls.
 Gasping for air, you lay there, vision fading, the symbols etched into your
 memory. You realize, too late, the sinister truth hidden within Whodunit Manor.
 
----
-
-The detective's pursuit of the truth ends in a chilling and untimely demise.
+Your pursuit of the truth ends in a chilling and untimely demise.
 The secrets of Whodunit Manor, particularly the sinister activities in the
 basement, remain forever shrouded in mystery.
   _____ _            ____           _ _ 
@@ -475,9 +466,7 @@ You nod, feeling a strange mixture of embarrassment and bewilderment.
 As you are make your way to the door, you can't help but wonder
 how you ended up as the star of this peculiar show.
 
----
-
-The detective's attempt at restoring order takes an unexpected turn,
+Your attempt at restoring order takes an unexpected turn,
 leading to the family losing confidence in your ability to solve the case.
 With the decision made to seek the assistance of another detective,
 you make your exit from Whodunit Manor.
@@ -508,8 +497,8 @@ followed by the sound of shattering glass. The family members jump in
 their seats, their faces pale with shock.
 
 You rush to the window and see a shattered vase, its remnants scattered
-across the floor. Lady Genevieve gasps, clutching her chest. "What in the world..."
-she begins, her voice trembling.
+across the floor. Lady Genevieve gasps, clutching her chest. 
+"What in the world..." she begins, her voice trembling.
 
 Before anyone can react, the lights flicker and then go out entirely.
 The room is plunged into darkness, and a collective gasp sweeps through
@@ -661,12 +650,12 @@ an obsession that ultimately led to Mortimer's demise.
 Your actions have solved the mystery and have preserved the
 diversity of programming languages for generations to come.
 
-  _____ _            _____           _ _ 
- |_   _| |__   ___  | ____|_ __   __| | |
-   | | | '_ \ / _ \ |  _| | '_ \ / _` | |
-   | | | | | |  __/ | |___| | | | (_| |_|
-   |_| |_| |_|\___| |_____|_| |_|\__,_(_)   
---------------------------------------------------------------------------------
+ __   _____  _   _    ____   ___  _ __     _______ ____     ___ _____ _ 
+ \ \ / / _ \| | | |  / ___| / _ \| |\ \   / / ____|  _ \   |_ _|_   _| |
+  \ V / | | | | | |  \___ \| | | | | \ \ / /|  _| | | | |   | |  | | | |
+   | || |_| | |_| |   ___) | |_| | |__\ V / | |___| |_| |   | |  | | |_|
+   |_| \___/ \___/   |____/ \___/|_____\_/  |_____|____/   |___| |_| (_)
+ --------------------------------------------------------------------------------
     """
     )
 
@@ -936,12 +925,12 @@ Watching from a distance, satisfied that your quick thinking and bravery led to
 the unraveling of this bizarre case. With the manor now secured, you make your
 exit, knowing that you've once again proven yourself as a true Detective
 Extraordinaire.
- 
-  _____ _            _____           _ _ 
- |_   _| |__   ___  | ____|_ __   __| | |
-   | | | '_ \ / _ \ |  _| | '_ \ / _` | |
-   | | | | | |  __/ | |___| | | | (_| |_|
-   |_| |_| |_|\___| |_____|_| |_|\__,_(_)   
+
+ __   _____  _   _    ____   ___  _ __     _______ ____     ___ _____ _ 
+ \ \ / / _ \| | | |  / ___| / _ \| |\ \   / / ____|  _ \   |_ _|_   _| |
+  \ V / | | | | | |  \___ \| | | | | \ \ / /|  _| | | | |   | |  | | | |
+   | || |_| | |_| |   ___) | |_| | |__\ V / | |___| |_| |   | |  | | |_|
+   |_| \___/ \___/   |____/ \___/|_____\_/  |_____|____/   |___| |_| (_)
 --------------------------------------------------------------------------------
         """
     )
@@ -1007,7 +996,7 @@ catching your attention. It emanates an aura of mystery.
 What will you do?
 
 A. Explore the room behind the sturdy wooden door.
-B. Explore the basement further 
+B. Explore the basement further
         """
     )
 
@@ -1037,7 +1026,7 @@ B. Quietly retreat and call for backup
 def branch_b1_2_2():
     print(
         """
-You decide to explore the basement further. 
+You decide to explore the basement further.
 
 The air grows heavier, the shadows
 deeper, as you move deeper into the heart of the manor's secrets.
@@ -1048,7 +1037,7 @@ that chills you to the bone.
 
 Dim light filters in, casting eerie shapes across the floor. Suddenly you spot
 it - a colossal python, coiled and poised, its unblinking eyes fixed on you.
-The room seems almost tailor-made for the creature, with strange symbols 
+The room seems almost tailor-made for the creature, with strange symbols
 etched into the walls.
 
 Panic surges through you, but it's too late. With lightning speed, the python
